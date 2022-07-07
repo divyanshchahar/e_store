@@ -1,0 +1,24 @@
+[
+  {
+    "id": "d7e3f3b3-c8ff-466e-8dde-ae49d817f1f7",
+    "name": "Grey-Twil Long-sleeve Shirt",
+    "color": "Grey",
+    "type": "Mens-Fashion",
+    "image_url": [
+      "../images/shirt (1).jpg",
+      "../images/shirt (2).jpg",
+      "../images/shirt (3).jpg"
+    ]
+  },
+  {
+    "id": "cd9d15e1-5e0c-43d4-9e85-ccbe4f430e3d",
+    "name": "Blue Denim Jeans",
+    "color": "Blue",
+    "type": "Mens-Fashion",
+    "image_url": [
+      "../images/jeans (1).jpg",
+      "../images/jeans (2).jpg",
+      "../images/jeans (3).jpg"
+    ]
+  }
+]
