@@ -1,4 +1,5 @@
 import useAPIData from "./useAPIData";
+import SingleImageLoader from "./singleimageloader";
 
 const url = "product_data.json";
 
@@ -9,6 +10,7 @@ const ProductList = () => {
       {products.map((product) => {
         return (
           <div key={product.id}>
+            <SingleImageLoader productId={product.id} />
             <h1>{product.name}</h1>
             <p>{product.price}</p>
           </div>
