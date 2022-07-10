@@ -13,6 +13,8 @@ const ProductList = () => {
             <SingleImageLoader productId={product.id} />
             <h1>{product.name}</h1>
             <p>{product.price}</p>
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
           </div>
         );
       })}
