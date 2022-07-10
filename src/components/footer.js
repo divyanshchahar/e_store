@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div>
       <ul>
-        <li>Terms of Use</li>
-        <li>Coookie Pilicy</li>
-        <li>Privacy Policy</li>
+        <Link to="/termsofuse">Terms of Use</Link>
+        <Link to="/cookiepolicy">Cookie Policy</Link>
+        <Link to="/privacypolicy">Privacy Policy</Link>
       </ul>
     </div>
   );
