@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 import useAPIData from "./useAPIData";
 import SingleImageLoader from "./singleimageloader";
 
-const url = "product_data.json";
+const url = "http://localhost:3001/product_data.json";
 
 const ProductList = () => {
   const products = useAPIData(url);
@@ -10,8 +12,12 @@ const ProductList = () => {
       {products.map((product) => {
         return (
           <div key={product.id}>
-            <SingleImageLoader productId={product.id} />
-            <h1>{product.name}</h1>
+            <Link to={`/product/${product.id}`}>
+              <SingleImageLoader productId={product.id} />
+            </Link>
+            <Link to={`/product/${product.id}`}>
+              <h1>{product.name}</h1>
+            </Link>
             <p>{product.price}</p>
             <button>Add to Cart</button>
             <button>Buy Now</button>
