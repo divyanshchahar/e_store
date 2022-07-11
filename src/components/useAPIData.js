@@ -7,7 +7,8 @@ const useAPIData = (url) => {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        setProducts(data);
+        const { product_data } = data;
+        setProducts(product_data);
       })
       .catch((err) => {
         console.log(err);
