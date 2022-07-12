@@ -1,9 +1,8 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 
 const useAPIData = (url) => {
   const [products, setProducts] = useState([]);
-
-  const getData = useCallback(async () => {
+  const getData = async () => {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
@@ -13,11 +12,11 @@ const useAPIData = (url) => {
       .catch((err) => {
         console.log(err);
       });
-  }, [url]);
+  };
 
   useEffect(() => {
     getData();
-  }, [url, getData]);
+  }, [url]);
 
   return products;
 };
