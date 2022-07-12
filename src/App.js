@@ -6,15 +6,17 @@ import PrivacypolicyPage from "./components/privacypolicypage";
 import TermsofUsePAge from "./components/termsofusepage";
 import CookiePolicyPage from "./components/cookiepolicypage";
 import ErrorPage from "./components/error";
+import ProductPage from "./components/productpage";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route exact path="/" element={<HomePage />} />
         <Route path="/privacypolicy" element={<PrivacypolicyPage />} />
         <Route path="/termsofuse" element={<TermsofUsePAge />} />
         <Route path="/cookiepolicy" element={<CookiePolicyPage />} />
+        <Route path="/product/:id" element={<ProductPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
