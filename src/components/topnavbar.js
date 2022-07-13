@@ -1,5 +1,6 @@
 // IMPORTING FUNCTIONALITY
 import React from "react";
+import { Link } from "react-router-dom";
 
 // IMPORTING IMAGES
 import usericon from "../assets/images/user-solid.svg";
@@ -14,15 +15,13 @@ const TopNavBar = () => {
       <input type="text" />
       <button>Search</button>
 
-      <button>
-        cart
+      <Link to="/cart">
         <img src={carticon} alt="" />
-      </button>
+      </Link>
 
-      <button>
-        user
+      <Link to="/loginpage">
         <img src={usericon} alt="" />
-      </button>
+      </Link>
     </div>
   );
 };

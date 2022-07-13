@@ -7,6 +7,8 @@ import TermsofUsePAge from "./components/termsofusepage";
 import CookiePolicyPage from "./components/cookiepolicypage";
 import ErrorPage from "./components/error";
 import ProductPage from "./components/productpage";
+import Cart from "./components/cartpage";
+import LoginPage from "./components/loginPage";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/termsofuse" element={<TermsofUsePAge />} />
         <Route path="/cookiepolicy" element={<CookiePolicyPage />} />
         <Route path="/product/:id" element={<ProductPage />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/loginpage" element={<LoginPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
