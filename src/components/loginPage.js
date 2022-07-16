@@ -4,14 +4,14 @@ const LoginPage = () => {
       <fieldset>
         <legend> Personel Information</legend>
 
-        <lebbl>Name</lebbl>
+        <label>Name</label>
         <br />
         <input type="text" placeholder="Name" />
         <br />
 
-        <lebbl>E-mail</lebbl>
+        <label>E-mail</label>
         <br />
-        <input type="text" placeholder="e-mail" />
+        <input type="email" placeholder="e-mail" />
         <br />
       </fieldset>
 
@@ -62,6 +62,7 @@ const LoginPage = () => {
         <input type="text" placeholder="CVV" />
         <br />
       </fieldset>
+      <input type="submit" value="submit" />
     </form>
   );
 };
