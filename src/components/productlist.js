@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import useAPIData from "./useAPIData";
 import SingleImageLoader from "./singleimageloader";
 
-const url = "http://localhost:3001/product_data.json";
+const url = "http://localhost:3001/product_data";
 
 const ProductList = () => {
   const products = useAPIData(url);

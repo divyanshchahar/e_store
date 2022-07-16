@@ -5,7 +5,7 @@ import MultiImageLoader from "./multiimageloader";
 
 const ProductPage = () => {
   const { id } = useParams();
-  const products = useAPIData("http://localhost:3001/product_data.json");
+  const products = useAPIData("http://localhost:3001/product_data");
   const [filteredProduct] = products.filter((item) => item.id === id);
 
   return (
