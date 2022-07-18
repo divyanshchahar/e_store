@@ -9,6 +9,7 @@ import ErrorPage from "./components/error";
 import ProductPage from "./components/productpage";
 import Cart from "./components/cartpage";
 import LoginPage from "./components/loginPage";
+import UserHandler from "./components/userhandler";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path="/cookiepolicy" element={<CookiePolicyPage />} />
         <Route path="/product/:id" element={<ProductPage />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/loginpage" element={<LoginPage />} />
+        <Route path="/loginpage" element={<UserHandler />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
