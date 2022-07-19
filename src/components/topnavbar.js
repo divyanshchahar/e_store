@@ -12,16 +12,20 @@ const TopNavBar = () => {
     <div className="topnavbar">
       <img src={logoicon} alt={""} />
 
-      <input type="text" />
-      <button>Search</button>
+      <div>
+        <input type="text" />
+        <button>Search</button>
+      </div>
 
-      <Link to="/cart">
-        <img src={carticon} alt="" />
-      </Link>
+      <div>
+        <Link to="/cart">
+          <img src={carticon} alt="" />
+        </Link>
 
-      <Link to="/loginpage">
-        <img src={usericon} alt="" />
-      </Link>
+        <Link to="/loginpage">
+          <img src={usericon} alt="" />
+        </Link>
+      </div>
     </div>
   );
 };

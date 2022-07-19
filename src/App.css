@@ -1,0 +1,21 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --size_img_topnavbar: 4vh;
+}
+
+.topnavbar {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topnavbar img {
+  height: var(--size_img_topnavbar);
+}
