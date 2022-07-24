@@ -6,7 +6,9 @@ const HomePage = () => {
   return (
     <>
       <TopNavBar />
-      <ProductList />
+      <div className="listofproducts">
+        <ProductList />
+      </div>
       <Footer />
     </>
   );
