@@ -8,7 +8,6 @@ import CookiePolicyPage from "./components/cookiepolicypage";
 import ErrorPage from "./components/error";
 import ProductPage from "./components/productpage";
 import Cart from "./components/cartpage";
-import LoginPage from "./components/loginPage";
 import UserHandler from "./components/userhandler";
 
 function App() {
