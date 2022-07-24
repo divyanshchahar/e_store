@@ -581,5 +581,13 @@
       "type": "Analog Wrist Watch",
       "price": 1000
     }
-  ]
+  ],
+  "appdata": [
+    {
+      "id": "appdataid",
+      "userCount": 0,
+      "currentUser": ""
+    }
+  ],
+  "users": []
 }
