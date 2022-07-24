@@ -1,3 +1,4 @@
+// IMPORTING ASSETS
 import termsOfUSeIcon from "../assets/images/terms_of_use.png";
 
 const TermsofUsePAge = () => {

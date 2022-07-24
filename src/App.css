@@ -5,17 +5,34 @@
 }
 
 :root {
-  --size_img_topnavbar: 4vh;
+  --size_img_topnavbar: 10vw;
+  --size_productlist_margin_top: 8vh;
+  --size_productlist_img: 20vw;
+  --size_productlist_padding: 5vw;
+
+  --clr-topnavbar: rgb(0, 0, 35);
+  /* --clr-logo: rgb() */
 }
 
 .topnavbar {
   display: flex;
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--clr-topnavbar);
+  padding: 1vw;
 }
 
 .topnavbar img {
   height: var(--size_img_topnavbar);
+}
+
+.listofproducts {
+  margin-top: var(--size_productlist_margin_top);
+}
+
+.listofproducts img {
+  width: var(--size_productlist_img);
 }

@@ -1,3 +1,4 @@
+// IMPORTING COMPONENETS
 import TopNavBar from "./topnavbar.js";
 import ProductList from "./productlist.js";
 import Footer from "./footer.js";

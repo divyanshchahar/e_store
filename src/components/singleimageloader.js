@@ -1,3 +1,4 @@
+//IMPORTING ASSETS
 import image_index from "../assets/data/image_index.js";
 
 const SingleImageLoader = (productId) => {

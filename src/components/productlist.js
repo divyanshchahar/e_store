@@ -1,5 +1,7 @@
+// IMPORTING FUNCTIONALITY
 import { Link } from "react-router-dom";
 
+// IMPORTING COMPONENTS
 import useAPIData from "./useAPIData";
 import SingleImageLoader from "./singleimageloader";
 

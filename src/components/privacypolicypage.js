@@ -1,3 +1,4 @@
+// IMPORTING ASSETS
 import privacyPolicyIcon from "../assets/images/privacy_policy.png";
 
 const PrivacypolicyPage = () => {

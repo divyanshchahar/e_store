@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// IMPORTING IMAGES
+// IMPORTING ASSETS
 import usericon from "../assets/images/user-solid.svg";
 import logoicon from "../assets/images/store-solid.svg";
 import carticon from "../assets/images/cart-shopping-solid.svg";

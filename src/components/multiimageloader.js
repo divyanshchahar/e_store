@@ -1,5 +1,7 @@
+// IMPORTING FUNCTIONALITY
 import { useState } from "react";
 
+// IMPORTING ASSETS
 import image_index from "../assets/data/image_index.js";
 
 const MultiImageLoader = ({ productId }) => {

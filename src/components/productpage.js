@@ -1,5 +1,8 @@
-import useAPIData from "./useAPIData";
+// IMPORTING FUNCTIONALITY
 import { useParams } from "react-router-dom";
+
+// IMPORTING COMPONENTS
+import useAPIData from "./useAPIData";
 import DetailLoader from "./detailloader";
 import MultiImageLoader from "./multiimageloader";
 

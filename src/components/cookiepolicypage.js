@@ -1,3 +1,4 @@
+// IMPORTING ASSETS
 import cookiePolicyIcon from "../assets/images/cookies.png";
 
 const CookiePolicyPage = () => {
