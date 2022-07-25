@@ -12,7 +12,7 @@ const TopNavBar = () => {
     <div className="topnavbar">
       <img src={logoicon} alt={""} />
 
-      <div>
+      <div className="searchbar">
         <input type="text" />
         <button>Search</button>
       </div>
