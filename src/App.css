@@ -163,3 +163,40 @@
   display: block;
   margin: auto;
 }
+
+/* PRODUCT PAGE */
+
+.productpage {
+  margin-top: calc(3 * var(--size-img-topnavbar));
+  padding: 2vw;
+}
+
+.productpage img {
+  display: block;
+  margin: auto;
+  width: 50vw;
+  padding-top: 5vw;
+}
+
+.buttoncarrier {
+  display: block;
+  margin: auto;
+  width: fit-content;
+  padding: 1rem;
+}
+
+.buttoncarrier button {
+  padding: 0.25rem;
+  margin: 0.25rem;
+}
+
+.detailsofproduct {
+  display: block;
+  width: fit-content;
+  padding: 5vw;
+  margin: auto;
+}
+
+.detailsofproduct p {
+  font-size: 1rem;
+}

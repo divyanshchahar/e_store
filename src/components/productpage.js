@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom";
 import useAPIData from "./useAPIData";
 import DetailLoader from "./detailloader";
 import MultiImageLoader from "./multiimageloader";
+import TopNavBar from "./topnavbar.js";
+import Footer from "./footer";
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -16,8 +18,14 @@ const ProductPage = () => {
       {typeof filteredProduct === "undefined" && <h1>Loading...</h1>}
       {typeof filteredProduct === "object" && (
         <>
-          <DetailLoader productdetails={filteredProduct} />
-          <MultiImageLoader productId={filteredProduct.id} />
+          <TopNavBar />
+          <div className="productpage">
+            <MultiImageLoader productId={filteredProduct.id} />
+            <div className="detailsofproduct">
+              <DetailLoader productdetails={filteredProduct} />
+            </div>
+          </div>
+          <Footer />
         </>
       )}
     </>

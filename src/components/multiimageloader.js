@@ -37,10 +37,12 @@ const MultiImageLoader = ({ productId }) => {
       {selectedItem[0].images.length > 1 && (
         <>
           <img src={selectedItem[0].images[imageIndex]} alt="" />
-          <button onClick={() => changeImage("previous")}>
-            previous image
-          </button>
-          <button onClick={() => changeImage("next")}>next image</button>
+          <div className="buttoncarrier">
+            <button onClick={() => changeImage("previous")}>
+              previous image
+            </button>
+            <button onClick={() => changeImage("next")}>next image</button>
+          </div>
         </>
       )}
     </>
