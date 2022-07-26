@@ -25,6 +25,13 @@
   --size-fontweight-secondrypage: 600;
   --size-padding-secondrypage: 1rem;
   --size-width-secondrypage: 80vw;
+  --size-padding1-inputform: 1rem;
+  --size-margin1-inputform: 1rem;
+  --size-padding2-inputform: 0.75rem;
+  --size-borderradius-inputform: : 2vw;
+  --size-width-inputform: 100%;
+  --size-margin2-inputform: 1rem;
+  --size-padding3-inputform: 0.25rem;
 
   --clr-topnavbar: rgb(0, 0, 35);
   --clr-icons: rgb(255, 255, 255);
@@ -199,4 +206,21 @@
 
 .detailsofproduct p {
   font-size: 1rem;
+}
+
+/* INPUT FORM */
+.inputform {
+  padding: var(--size-padding1-inputform);
+}
+
+.inputform fieldset {
+  margin-bottom: var(--size-margin1-inputform);
+  padding: var(--size-padding2-inputform);
+  border-radius: var(--size-borderradius-inputform);
+}
+
+.inputform input {
+  width: var(--size-width-inputform);
+  margin-bottom: var(--size-margin2-inputform);
+  padding: var(--size-padding3-inputform);
 }

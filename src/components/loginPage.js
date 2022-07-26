@@ -60,7 +60,7 @@ const LoginPage = () => {
   } = state;
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="inputform">
       <fieldset>
         <legend> Personel Information</legend>
 
@@ -232,7 +232,7 @@ const LoginPage = () => {
         />
         <br />
       </fieldset>
-      <input type="submit" value="submit" />
+      <input type="submit" value="Submit" className="submitbutton" />
     </form>
   );
 };
