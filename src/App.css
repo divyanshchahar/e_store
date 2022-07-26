@@ -122,8 +122,12 @@
 }
 
 /* FOOTER */
+
 .footer {
   display: flex;
+  position: fixed;
+  bottom: 0;
+  width: var(--size-width-topnavbar);
   justify-content: space-evenly;
   background-color: var(--clr-background-footer);
   padding: var(--size-padding1-footer);
