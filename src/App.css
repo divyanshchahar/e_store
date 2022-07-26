@@ -30,6 +30,7 @@
   --clr-icons: rgb(255, 255, 255);
   --clr-background-footer: rgb(0, 0, 0);
   --clr-links-footer: rgb(255, 255, 255);
+  --clr-background: rgb(245, 245, 255);
 }
 
 /* 
@@ -75,8 +76,9 @@
 /* PRODUCT LIST  */
 .listofproducts {
   margin-top: calc(3 * var(--size-img-topnavbar));
+  margin-bottom: var(--size-img-topnavbar);
   padding: var(--size-padding-listofproducts);
-  background-color: rgb(245, 245, 255);
+  background-color: var(--clr-background);
 }
 
 .product {
