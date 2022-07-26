@@ -20,6 +20,11 @@
   --size-borderradius-listofproducts: 1.55vw;
   --size-padding1-footer: 1rem;
   --size-padding2-footer: 0.5rem;
+  --size-fontsize1-secondrypage: 2rem;
+  --size-fontsize2-secondrypage: 1rem;
+  --size-fontweight-secondrypage: 600;
+  --size-padding-secondrypage: 1rem;
+  --size-width-secondrypage: 80vw;
 
   --clr-topnavbar: rgb(0, 0, 35);
   --clr-icons: rgb(255, 255, 255);
@@ -128,4 +133,27 @@
   text-decoration: none;
   color: var(--clr-links-footer);
   padding: var(--size-padding2-footer);
+}
+
+/* TERMS OF USE PAGE */
+
+.secondrypage {
+  margin-top: calc(3 * var(--size-img-topnavbar));
+}
+
+.secondrypage h1 {
+  font-size: var(--size-fontsize1-secondrypage);
+  text-align: center;
+}
+
+.secondrypage p {
+  font-size: var(--size-fontsize2-secondrypage);
+  font-weight: var(--size-fontweight-secondrypage);
+  padding: var(--size-padding-secondrypage);
+}
+
+.secondrypage img {
+  width: var(--size-width-secondrypage);
+  display: block;
+  margin: auto;
 }
