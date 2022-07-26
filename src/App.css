@@ -18,9 +18,13 @@
   --size-productlist-img: 30vw;
   --size-padding-listofproducts: 2.5vw;
   --size-borderradius-listofproducts: 1.55vw;
+  --size-padding1-footer: 1rem;
+  --size-padding2-footer: 0.5rem;
 
   --clr-topnavbar: rgb(0, 0, 35);
   --clr-icons: rgb(255, 255, 255);
+  --clr-background-footer: rgb(0, 0, 0);
+  --clr-links-footer: rgb(255, 255, 255);
 }
 
 /* 
@@ -110,4 +114,18 @@
 .listofproducts button {
   padding: 0.25rem;
   margin-right: 2vw;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--clr-background-footer);
+  padding: var(--size-padding1-footer);
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--clr-links-footer);
+  padding: var(--size-padding2-footer);
 }

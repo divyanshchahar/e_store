@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="footer">
       <ul>
         <Link to="/termsofuse">Terms of Use</Link>
         <Link to="/cookiepolicy">Cookie Policy</Link>
