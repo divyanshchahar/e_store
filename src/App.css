@@ -4,13 +4,19 @@
   box-sizing: border-box;
 }
 
+/* 
+##################
+# MOBILE DEVICES #
+################## 
+*/
+
 :root {
-  --size-img-topnavbar: 10vw;
+  --h-topnavbar: 10vw;
   --size-productlist-margin-top: 8vh;
-  --size-width-topnavbar: 100%;
+  --w-topnavbar: 100%;
   --size-productlist-padding: 5vw;
-  --size-padding-topnavbar: 3vw;
-  --size-gap-topnavbar: 1rem;
+  --p-topnavbar: 3vw;
+  --g-topnavbar: 1rem;
   --size-width-searchbar: 95vw;
   --size-width-searchbar-input: 80%;
   --size-width-searchbar-button: 20%;
@@ -40,28 +46,23 @@
   --clr-background: rgb(245, 245, 255);
 }
 
-/* 
-##################
-# MOBILE DEVICES #
-################## 
-*/
 
 /* TOPNAVBAR */
 .topnavbar {
   display: flex;
   position: fixed;
   top: 0;
-  width: var(--size-width-topnavbar);
+  width: var(--w-topnavbar);
   justify-content: space-between;
   align-items: center;
   background-color: var(--clr-topnavbar);
-  padding: var(--size-padding-topnavbar);
+  padding: var(--p-topnavbar);
   flex-wrap: wrap;
-  gap: var(--size-gap-topnavbar);
+  gap: var(--g-topnavbar);
 }
 
 .topnavbar img {
-  height: var(--size-img-topnavbar);
+  height: var(--h-topnavbar);
 }
 
 .searchbar {
@@ -82,8 +83,8 @@
 
 /* PRODUCT LIST  */
 .listofproducts {
-  margin-top: calc(3 * var(--size-img-topnavbar));
-  margin-bottom: var(--size-img-topnavbar);
+  margin-top: calc(3 * var(--h-topnavbar));
+  margin-bottom: var(--h-topnavbar);
   padding: var(--size-padding-listofproducts);
   background-color: var(--clr-background);
 }
@@ -136,7 +137,7 @@
   display: flex;
   position: fixed;
   bottom: 0;
-  width: var(--size-width-topnavbar);
+  width: var(--w-topnavbar);
   justify-content: space-evenly;
   background-color: var(--clr-background-footer);
   padding: var(--size-padding1-footer);
@@ -151,7 +152,7 @@
 /* TERMS OF USE PAGE */
 
 .secondrypage {
-  margin-top: calc(3 * var(--size-img-topnavbar));
+  margin-top: calc(3 * var(--h-topnavbar));
 }
 
 .secondrypage h1 {
@@ -174,7 +175,7 @@
 /* PRODUCT PAGE */
 
 .productpage {
-  margin-top: calc(3 * var(--size-img-topnavbar));
+  margin-top: calc(3 * var(--h-topnavbar));
   padding: 2vw;
 }
 
