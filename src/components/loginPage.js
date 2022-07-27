@@ -68,7 +68,6 @@ const LoginPage = () => {
         <br />
         <input
           type="text"
-          placeholder="Name"
           value={formName}
           onChange={(e) => {
             dispatch({
@@ -84,7 +83,6 @@ const LoginPage = () => {
         <br />
         <input
           type="email"
-          placeholder="e-mail"
           value={formEmail}
           onChange={(e) => {
             dispatch({
@@ -104,7 +102,6 @@ const LoginPage = () => {
         <br />
         <input
           type="text"
-          placeholder="House/Apartment no"
           value={formHouse}
           onChange={(e) => {
             dispatch({
@@ -120,7 +117,6 @@ const LoginPage = () => {
         <br />
         <input
           type="text"
-          placeholder="street"
           value={formStreet}
           onChange={(e) => {
             dispatch({
@@ -152,7 +148,6 @@ const LoginPage = () => {
         <br />
         <input
           type="text"
-          placeholder="PIN"
           value={formPin}
           onChange={(e) => {
             dispatch({
@@ -172,7 +167,6 @@ const LoginPage = () => {
         <br />
         <input
           type="text"
-          placeholder="name on the card"
           value={formNameOnCard}
           onChange={(e) => {
             dispatch({
@@ -188,7 +182,7 @@ const LoginPage = () => {
         <br />
         <input
           type="text"
-          placeholder="card number"
+          placeholder="XXXX-XXXX-XXXX-XXXX"
           value={formCardNumber}
           onChange={(e) => {
             dispatch({
@@ -204,7 +198,7 @@ const LoginPage = () => {
         <br />
         <input
           type="text"
-          placeholder="valid upto"
+          placeholder="MM/YY"
           value={formExpiry}
           onChange={(e) => {
             dispatch({
@@ -220,7 +214,7 @@ const LoginPage = () => {
         <br />
         <input
           type="text"
-          placeholder="CVV"
+          placeholder="XXX"
           value={formCvv}
           onChange={(e) => {
             dispatch({
