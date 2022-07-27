@@ -17,10 +17,10 @@
   --size-productlist-padding: 5vw;
   --p-topnavbar: 3vw;
   --g-topnavbar: 1rem;
-  --size-width-searchbar: 95vw;
-  --size-width-searchbar-input: 80%;
-  --size-width-searchbar-button: 20%;
-  --size-padding-searchbar: 0.25rem;
+  --w1-searchbar: 95vw;
+  --w2-searchbar-input: 80%;
+  --w2-searchbar-button: 20%;
+  --p1-searchbar: 0.25rem;
   --size-productlist-img: 30vw;
   --size-padding-listofproducts: 2.5vw;
   --size-borderradius-listofproducts: 1.55vw;
@@ -66,19 +66,19 @@
 }
 
 .searchbar {
-  width: var(--size-width-searchbar);
+  width: var(--w1-searchbar);
   order: 1;
   margin: auto;
 }
 
 .searchbar input {
-  width: var(--size-width-searchbar-input);
-  padding: var(--size-padding-searchbar);
+  width: var(--w2-searchbar-input);
+  padding: var(--p1-searchbar);
 }
 
 .searchbar button {
-  width: var(--size-width-searchbar-button);
-  padding: var(--size-padding-searchbar);
+  width: var(--w2-searchbar-button);
+  padding: var(--p1-searchbar);
 }
 
 /* PRODUCT LIST  */
