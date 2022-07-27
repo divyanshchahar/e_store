@@ -174,38 +174,44 @@
       "id": "59544db5-b8e0-4390-8025-3edf0151a7aa",
       "name": "Burboun Whiskey",
       "brand": "Colonel E.H.",
-      "type": "Beverages"
+      "type": "Beverages",
+      "price": 100
     },
     {
       "id": "92594c29-36f1-497a-8a56-7334fe6b5b21",
       "name": "Carbonated Drink",
       "brand": "Coca-Cola",
-      "type": "Beverages"
+      "type": "Beverages",
+      "price": 1.5
     },
     {
       "id": "b307cd02-654a-462f-b697-65dab8a0e434",
       "name": "Whiskey",
       "brand": "Jack Daniels",
-      "type": "Beverages"
+      "type": "Beverages",
+      "price": 55
     },
     {
       "id": "f7da01c1-556d-4203-a501-f02050890edc",
       "name": "Beer",
       "brand": "Modello",
-      "type": "Beverages"
+      "type": "Beverages",
+      "price": 5
     },
     {
       "id": "6e57769e-e790-4a0b-8369-749f47f68e61",
       "name": "Light Beer",
       "brand": "Bud Light",
-      "type": "Beverages"
+      "type": "Beverages",
+      "price": 3
     },
     {
       "id": "b3aded3c-ea91-49da-9427-6d2d860df20c",
       "name": "Bike",
       "brand": "velociraptor",
       "color": "Black",
-      "type": "Life-Style"
+      "type": "Life-Style",
+      "price": 1000
     },
     {
       "id": "f9a6721e-b72f-4893-9eb0-abd7eb201a6d",
@@ -427,7 +433,7 @@
       "brand": "Generic",
       "color": "Olive-Green",
       "type": "sports and Fitness",
-      "price": 20
+      "price": 25
     },
     {
       "id": "430de1d9-e40f-4a5d-9ee3-cedd42b7258b",
@@ -443,7 +449,7 @@
       "brand": "Woody",
       "color": "Brown",
       "type": "sports and Fitness",
-      "price": 20
+      "price": 35
     },
     {
       "id": "e8feb649-a2b0-4e88-9119-fcac46ea794f",
@@ -571,7 +577,7 @@
       "brand": "Seiko",
       "color": "Black",
       "type": "Analog Wrist Watch",
-      "price": 1000
+      "price": 2000
     },
     {
       "id": "ed5ca1ce-7df5-4579-9911-60a9c89889d2",
