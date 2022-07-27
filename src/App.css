@@ -178,6 +178,11 @@
   padding: 2vw;
 }
 
+.productpage h1{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 .productpage img {
   display: block;
   margin: auto;
