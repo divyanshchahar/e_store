@@ -11,20 +11,20 @@
 */
 
 :root {
-  /* SIZES */
-  --h1-topnavbar: 10vw;
-  --g1-topnavbar: 1rem;
-  --w1-topnavbar: 100%;
-  --p1-topnavbar: 3vw;
+  /* DIMENSIONS */
+  --w1-fullscreen: 100vw;
+  
+  --p1-fullscreen: calc(0.03 * var(--w1-fullscreen));
+  
+  --h1-icon: 10vw;
+
+  --p1-textcontainer: 0.25rem;
+  
+  /* ___________________________________________________ */
 
   --m1-productlist: 8vh;
   --p1-productlist: 5vw;
   --w1-productlist: 30vw;
-
-  --w1-searchbar: 95vw;
-  --w2-searchbar: 80%;
-  --w3-searchbar: 20%;
-  --p1-searchbar: 0.25rem;
 
   --p1-listofproducts: 2.5vw;
   --p2-listofproducts: 0.25rem;
@@ -73,7 +73,7 @@
 
 
   /* COLORS */
-  --clr-topnavbar: rgb(0, 0, 35);
+  --clr-theme1: rgb(0, 0, 35);
   --clr-icons: rgb(255, 255, 255);
   --clr-background-footer: rgb(0, 0, 0);
   --clr-links-footer: rgb(255, 255, 255);
@@ -86,39 +86,39 @@
   display: flex;
   position: fixed;
   top: 0;
-  width: var(--w1-topnavbar);
+  width: var(--w1-fullscreen);
   justify-content: space-between;
   align-items: center;
-  background-color: var(--clr-topnavbar);
-  padding: var(--p1-topnavbar);
+  background-color: var(--clr-theme1);
+  padding: var(--p1-fullscreen);
   flex-wrap: wrap;
-  gap: var(--g1-topnavbar);
+  gap: var(--p1-fullscreen);
 }
 
 .topnavbar img {
-  height: var(--h1-topnavbar);
+  height: var(--h1-icon);
 }
 
 .searchbar {
-  width: var(--w1-searchbar);
+  display: flex;
+  width: var(--w1-fullscreen);
   order: 1;
-  margin: auto;
 }
 
 .searchbar input {
-  width: var(--w2-searchbar);
-  padding: var(--p1-searchbar);
+  flex-grow: 1;
+  padding: var(--p1-textcontainer);
 }
 
 .searchbar button {
-  width: var(--w3-searchbar);
-  padding: var(--p1-searchbar);
+  width: fit-content;
+  padding: var(--p1-textcontainer);
 }
 
 /* PRODUCT LIST  */
 .listofproducts {
-  margin-top: calc(3 * var(--h1-topnavbar));
-  margin-bottom: var(--h1-topnavbar);
+  margin-top: calc(3 * var(--h1-icon));
+  margin-bottom: var(--h1-icon);
   padding: var(--p1-listofproducts);
   background-color: var(--clr-background);
 }
@@ -170,7 +170,7 @@
   display: flex;
   position: fixed;
   bottom: 0;
-  width: var(--w1-topnavbar);
+  width: var(--w1-fullscreen);
   justify-content: space-evenly;
   background-color: var(--clr-background-footer);
   padding: var(--p1-footer);
@@ -185,7 +185,7 @@
 /* TERMS OF USE PAGE */
 
 .secondrypage {
-  margin-top: calc(3 * var(--h1-topnavbar));
+  margin-top: calc(3 * var(--h1-icon));
 }
 
 .secondrypage h1 {
@@ -208,7 +208,7 @@
 /* PRODUCT PAGE */
 
 .productpage {
-  margin-top: calc(3 * var(--h1-topnavbar));
+  margin-top: calc(3 * var(--h1-icon));
   padding: var(--p1-productpage);
 }
 
