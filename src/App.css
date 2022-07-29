@@ -28,6 +28,18 @@
   --fw1-headings: 500;
 
   --br1-fullscreen: calc(0.025 * var(--w1-fullscreen));
+
+  /* ___________________________________________________ */
+  
+  --fs2-heading: 2rem;
+  --fs2-normalemphasized: 1rem;
+
+  --fw2-normalemphasized: 600;
+
+  --p2-fullscreen: 5vw;
+  
+  --w2-img: 80vw;
+  /* ___________________________________________________ */
   /* ___________________________________________________ */
 
   --m1-productlist: 8vh;
@@ -54,11 +66,6 @@
   --p1-footer: 1rem;
   --p2-footer: 0.5rem;
 
-  --fs1-secondrypage: 2rem;
-  --fs2-secondrypage: 1rem;
-  --fw1-secondrypage: 600;
-  --p1-secondrypage: 1rem;
-  --w1-secondrypage: 80vw;
 
   --p1-buttoncarrier: 1rem;
   --p2-buttoncarrier: 0.5rem;
@@ -186,25 +193,25 @@
   color: var(--clr-links-footer);
 }
 
-/* TERMS OF USE PAGE */
+/* SECONDRY PAGES */
 
 .secondrypage {
   margin-top: calc(3 * var(--h1-icon));
 }
 
 .secondrypage h1 {
-  font-size: var(--fs1-secondrypage);
+  font-size: var(--fs2-heading);
   text-align: center;
 }
 
 .secondrypage p {
-  font-size: var(--fs2-secondrypage);
-  font-weight: var(--fw1-secondrypage);
-  padding: var(--p1-secondrypage);
+  font-size: var(--fs2-normalemphasized);
+  font-weight: var(--fw2-normalemphasized);
+  padding: var(--p2-fullscreen);
 }
 
 .secondrypage img {
-  width: var(--w1-secondrypage);
+  width: var(--w2-img);
   display: block;
   margin: auto;
 }
