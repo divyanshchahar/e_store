@@ -12,25 +12,28 @@
 
 :root {
   /* DIMENSIONS */
+
+  /* 1 */
+
   --w1-fullscreen: 100vw;
   --w1-img: calc(0.3 * var(--w1-fullscreen));
   --w1-detailcontainer: calc(0.6 * var(--w1-fullscreen));
-  
+
   --p1-fullscreen1: calc(0.03 * var(--w1-fullscreen));
   --p1-fullscreen2: calc(0.5 * var(--p1-fullscreen1));
-  
+
   --h1-icon: calc(0.1 * var(--w1-fullscreen));
 
   --p1-textcontainer: 0.25rem;
-  
+
   --fs1-headings: 1.25rem;
-  
+
   --fw1-headings: 500;
 
   --br1-fullscreen: calc(0.025 * var(--w1-fullscreen));
 
-  /* ___________________________________________________ */
-  
+  /* 2 */
+
   --fs2-heading: 2rem;
   --fs2-normalemphasized: 1rem;
 
@@ -39,48 +42,32 @@
   --p2-fullscreen: 5vw;
 
   --w2-img: 80vw;
-  
-  /* ___________________________________________________ */
-  
+
+  --m2-product: 5vw; /* here */
+
+  /* 3 */
+
   --fs3-productpage: 1.5rem;
   --fs3-details: 1rem;
-  
+
   --fw3-productpage: 500;
-  
+
   --w3-img: 50vw;
-  
+
   --p3-img: 5vw;
   --p3-button: 1rem;
 
-  /* ___________________________________________________ */
-  /* ___________________________________________________ */
+  /* 4 */
 
-  --m1-productlist: 8vh;
-  --p1-productlist: 5vw;
+  --p4: 4vw;
+  --p4-fieldset: 5vw;
+  --p4-input: 0.25rem;
 
-  --p1-listofproducts: 2.5vw;
-  --p2-listofproducts: 0.25rem;
-  --m1-listofproducts: 2vw;
+  --m4-fieldset: 5vw;
 
-  --m2-product: 5vw;  /* here */
+  --w4-input: 100%; /* here */
 
-  --p1-productdetail: 2vw;
-
-  --p1-detailofproduct: 5vw;
-
-  --p1-footer: 1rem;
-  --p2-footer: 0.5rem;
-
-  --m1-buttoncarrier: 0.25rem;
-
-  --p1-inputform: 1rem;
-  --m1-inputform: 1rem;
-  --p2-inputform: 0.75rem;
-  --br1-inputform: : 2vw;
-  --w1-inputform: 100%;
-  --m2-inputform: 1rem;
-  --p3-inputform: 0.25rem;
-
+  --m4-input: 1rem;
 
   /* COLORS */
   --clr-theme1: rgb(0, 0, 35);
@@ -89,10 +76,7 @@
   --clr-background3: rgb(0, 0, 0);
 
   /* _____________________________________________ */
-
-  --clr-links-footer: rgb(255, 255, 255);
 }
-
 
 /* TOPNAVBAR */
 .topnavbar {
@@ -132,7 +116,7 @@
 .listofproducts {
   margin-top: calc(3 * var(--h1-icon));
   margin-bottom: var(--h1-icon);
-  padding: var(--p1-listofproducts);
+  padding: var(--p1-fullscreen1);
   background-color: var(--clr-background1);
 }
 
@@ -191,7 +175,7 @@
 
 .footer a {
   text-decoration: none;
-  color: var(--clr-links-footer);
+  color: var(--clr-background2);
 }
 
 /* SECONDRY PAGES */
@@ -224,7 +208,7 @@
   padding: var(--p1-fullscreen1);
 }
 
-.productpage h1{
+.productpage h1 {
   font-size: var(--fs3-productpage);
   font-weight: var(--fw3-productpage);
 }
@@ -261,17 +245,16 @@
 
 /* INPUT FORM */
 .inputform {
-  padding: var(--p1-inputform);
+  padding: var(--p4);
 }
 
 .inputform fieldset {
-  margin-bottom: var(--m1-inputform);
-  padding: var(--p2-inputform);
-  border-radius: var(--br1-inputform);
+  margin-bottom: var(--m4-fieldset);
+  padding: var(--p4-fieldset);
 }
 
 .inputform input {
-  width: var(--w1-inputform);
-  margin-bottom: var(--m2-inputform);
-  padding: var(--p3-inputform);
+  width: var(--w4-input);
+  margin-bottom: var(--m4-input);
+  padding: var(--p4-input);
 }
