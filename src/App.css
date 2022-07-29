@@ -78,10 +78,10 @@
   --clr-theme1: rgb(0, 0, 35);
   --clr-background1: rgb(245, 245, 255);
   --clr-background2: rgb(255, 255, 255);
+  --clr-background3: rgb(0, 0, 0);
 
   /* _____________________________________________ */
 
-  --clr-background-footer: rgb(0, 0, 0);
   --clr-links-footer: rgb(255, 255, 255);
 }
 
@@ -176,15 +176,14 @@
   position: fixed;
   bottom: 0;
   width: var(--w1-fullscreen);
+  background-color: var(--clr-background3);
+  padding: var(--p1-fullscreen1);
   justify-content: space-evenly;
-  background-color: var(--clr-background-footer);
-  padding: var(--p1-footer);
 }
 
 .footer a {
   text-decoration: none;
   color: var(--clr-links-footer);
-  padding: var(--p2-footer);
 }
 
 /* TERMS OF USE PAGE */

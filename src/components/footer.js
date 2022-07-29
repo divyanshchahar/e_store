@@ -5,11 +5,9 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footer">
-      <ul>
-        <Link to="/termsofuse">Terms of Use</Link>
-        <Link to="/cookiepolicy">Cookie Policy</Link>
-        <Link to="/privacypolicy">Privacy Policy</Link>
-      </ul>
+      <Link to="/termsofuse">Terms of Use</Link>
+      <Link to="/cookiepolicy">Cookie Policy</Link>
+      <Link to="/privacypolicy">Privacy Policy</Link>
     </div>
   );
 };
