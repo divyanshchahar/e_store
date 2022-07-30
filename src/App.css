@@ -258,3 +258,84 @@
   margin-bottom: var(--m4-input);
   padding: var(--p4-input);
 }
+
+/* 
+##################
+# TABLET DEVICES #
+################## 
+*/
+
+@media screen and (min-width: 429px) {
+  :root {
+    /* DIMENSIONS */
+
+    /* 1 */
+    --w1-fullscreen: 100vw;
+    --w1-searchbar: calc(0.6 * var(--w1-fullscreen));
+
+    --p1-fullscreen1: calc(0.015 * var(--w1-fullscreen));
+    --p1-fullscreen2: calc(0.5 * var(--p1-fullscreen1));
+
+    --h1-icon: calc(0.05 * var(--w1-fullscreen));
+
+    --fs1-normal: 1.25rem;
+
+    --p1-textcontainer: 0.5rem;
+
+    /* 
+    --w1-searchbar: calc(0.6 * var(--w1-fullscreen));
+    --w1-img: calc(0.15 * var(--w1-fullscreen));
+    --w1-detailcontainer: calc(0.6 * var(--w1-fullscreen));
+
+    --fs1-headings: 1.5rem;
+
+
+
+    --fw1-headings: 500;
+
+    --br1-fullscreen: calc(0.025 * var(--w1-fullscreen)); */
+
+    /* COLORS */
+    --clr-theme1: rgb(0, 0, 35);
+    --clr-background1: rgb(245, 245, 255);
+    --clr-background2: rgb(255, 255, 255);
+    --clr-background3: rgb(0, 0, 0);
+
+    /* _____________________________________________ */
+  }
+
+  /* TOPNAVBAR */
+  .topnavbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: var(--w1-fullscreen);
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-theme1);
+    padding: var(--p1-fullscreen1);
+    flex-wrap: wrap;
+    gap: var(--p1-fullscreen1);
+  }
+
+  .topnavbar img {
+    height: var(--h1-icon);
+  }
+
+  .searchbar {
+    display: flex;
+    width: var(--w1-searchbar);
+    order: 0;
+  }
+
+  .searchbar input {
+    flex-grow: 1;
+    padding: var(--p1-textcontainer);
+  }
+
+  .searchbar button {
+    font-size: var(--fs1-normal);
+    width: fit-content;
+    padding: var(--p1-textcontainer);
+  }
+}
