@@ -267,6 +267,8 @@
   :root {
     /* DIMENSIONS */
 
+    --overide-disable: 0;
+
     /* 1 */
     --w1-fullscreen: 100vw;
     --w1-searchbar: calc(0.6 * var(--w1-fullscreen));
@@ -289,7 +291,17 @@
 
     --br1-fullscreen: calc(0.01 * var(--w1-fullscreen));
 
-    --overide-disable: 0;
+    /*2*/
+    --fs2-heading: 3rem;
+    --fs2-normalemphasized: 1.25rem;
+
+    --fw2-normalemphasized: 600;
+
+    --p2-fullscreen: 5vw;
+
+    --w2-img: 60vw;
+
+    --m2-product: 5vw; /* here */
 
     /* COLORS */
     --clr-theme1: rgb(0, 0, 35);
@@ -386,7 +398,6 @@
   }
 
   /* FOOTER */
-
   .footer {
     display: flex;
     position: fixed;
@@ -400,5 +411,27 @@
   .footer a {
     text-decoration: none;
     color: var(--clr-background2);
+  }
+
+  /*2*/
+  .secondrypage {
+    margin-top: calc(2 * var(--h1-icon));
+  }
+
+  .secondrypage h1 {
+    font-size: var(--fs2-heading);
+    text-align: center;
+  }
+
+  .secondrypage p {
+    font-size: var(--fs2-normalemphasized);
+    font-weight: var(--fw2-normalemphasized);
+    padding: var(--p2-fullscreen);
+  }
+
+  .secondrypage img {
+    width: var(--w2-img);
+    display: block;
+    margin: auto;
   }
 }
