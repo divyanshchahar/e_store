@@ -74,8 +74,6 @@
   --clr-background1: rgb(245, 245, 255);
   --clr-background2: rgb(255, 255, 255);
   --clr-background3: rgb(0, 0, 0);
-
-  /* _____________________________________________ */
 }
 
 /* TOPNAVBAR */
@@ -298,8 +296,6 @@
     --clr-background1: rgb(245, 245, 255);
     --clr-background2: rgb(255, 255, 255);
     --clr-background3: rgb(0, 0, 0);
-
-    /* _____________________________________________ */
   }
 
   /* TOPNAVBAR */
@@ -387,5 +383,22 @@
   .productdetail a {
     text-decoration: none;
     color: inherit;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: var(--w1-fullscreen);
+    background-color: var(--clr-background3);
+    padding: var(--p1-fullscreen1);
+    justify-content: space-evenly;
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: var(--clr-background2);
   }
 }
