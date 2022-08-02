@@ -644,10 +644,11 @@
 
   .listofproducts {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
     gap: var(--g1);
     margin-top: calc(2 * var(--h1-icon));
-    margin-bottom: var(--h1-icon);
+    margin-bottom: calc(2 * var(--h1-icon));
     padding: var(--p1-fullscreen1);
     background-color: var(--clr-background1);
   }
