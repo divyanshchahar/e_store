@@ -5,9 +5,8 @@ import { Link } from "react-router-dom";
 import useAPIData from "./useAPIData";
 import SingleImageLoader from "./singleimageloader";
 
-const url = "http://localhost:3001/product_data";
-
-const ProductList = () => {
+const ProductList = ({ url }) => {
+  console.log(url);
   const products = useAPIData(url);
   return (
     <>
