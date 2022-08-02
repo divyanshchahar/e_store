@@ -583,7 +583,7 @@
 
     /*4*/
 
-    --w4-form: 45vw;
+    --w4-form: 30vw;
 
     --p4: 10vw;
     --p4-fieldset: 1rem;
@@ -782,7 +782,9 @@
   .inputform {
     width: var(--w4-form);
     padding: var(--overide-disable);
-    margin: auto;
+    align-self: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
   }
 
   .inputform fieldset {
