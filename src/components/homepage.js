@@ -8,6 +8,12 @@ const HomePage = () => {
     <>
       <TopNavBar />
       <div className="listofproducts">
+        <div className="sortingrow">
+          <button>Sort: Name (A to Z)</button>
+          <button>Sort: Name (Z to A)</button>
+          <button>Sort: Price (Ascending)</button>
+          <button>Sort: Price (Descending)</button>
+        </div>
         <ProductList />
       </div>
       <Footer />
