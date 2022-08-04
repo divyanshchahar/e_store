@@ -6,7 +6,6 @@ import useAPIData from "./useAPIData";
 import SingleImageLoader from "./singleimageloader";
 
 const ProductList = ({ url }) => {
-  console.log(url);
   const products = useAPIData(url);
   return (
     <>
