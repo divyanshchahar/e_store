@@ -1,4 +1,5 @@
 // IMPORTING FUNCTIONALITY
+import { toBeRequired } from "@testing-library/jest-dom/dist/matchers";
 import { useReducer } from "react";
 import { v4 as uuidv4 } from "uuid";
 
@@ -82,6 +83,7 @@ const LoginPage = () => {
               payload: e.currentTarget.value,
             });
           }}
+          required
         />
         <br />
 
@@ -97,6 +99,7 @@ const LoginPage = () => {
               payload: e.currentTarget.value,
             });
           }}
+          required
         />
         <br />
       </fieldset>
@@ -117,6 +120,7 @@ const LoginPage = () => {
               payload: e.currentTarget.value,
             });
           }}
+          required
         />
         <br />
 
@@ -132,6 +136,7 @@ const LoginPage = () => {
               payload: e.currentTarget.value,
             });
           }}
+          required
         />
         <br />
 
@@ -148,6 +153,7 @@ const LoginPage = () => {
               payload: e.currentTarget.value,
             });
           }}
+          required
         />
         <br />
 
@@ -163,6 +169,7 @@ const LoginPage = () => {
               payload: e.currentTarget.value,
             });
           }}
+          required
         />
         <br />
       </fieldset>
@@ -183,6 +190,7 @@ const LoginPage = () => {
               payload: e.currentTarget.value,
             });
           }}
+          required
         />
         <br />
 
@@ -199,6 +207,7 @@ const LoginPage = () => {
               payload: e.currentTarget.value,
             });
           }}
+          required
         />
         <br />
 
@@ -215,6 +224,7 @@ const LoginPage = () => {
               payload: e.currentTarget.value,
             });
           }}
+          required
         />
         <br />
 
@@ -231,6 +241,7 @@ const LoginPage = () => {
               payload: e.currentTarget.value,
             });
           }}
+          required
         />
         <br />
       </fieldset>
