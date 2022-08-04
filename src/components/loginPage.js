@@ -3,6 +3,7 @@ import { useReducer } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 const LoginPage = () => {
+  // REDUCER
   function loginReducer(state, action) {
     switch (action.type) {
       case "setpersonelinfo":
@@ -38,12 +39,14 @@ const LoginPage = () => {
     }
   }
 
+  // FUNCTION TO HANDLE SUBMISSIONS
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch({ type: "adduuid" });
     dispatch({ type: "submitform" });
   };
 
+  // VARIABLE TO INITALIZE REDUCER STATE
   const intialState = {
     id: "",
     personelinfo: { name: "", email: "" },
@@ -51,8 +54,9 @@ const LoginPage = () => {
     pay: { nameOnCard: "", cardNumber: "", expiry: "", cvv: "" },
   };
 
-  const [state, dispatch] = useReducer(loginReducer, intialState);
+  const [state, dispatch] = useReducer(loginReducer, intialState); // reducer declaration
 
+  // REDUCER STATE
   const {
     personelinfo: { formName, formEmail },
     address: { formHouse, formStreet, formTown, formPin },
@@ -60,7 +64,9 @@ const LoginPage = () => {
   } = state;
 
   return (
+    // FORM
     <form onSubmit={handleSubmit} className="inputform">
+      {/* FIELDSET - PERSONEL INFORMATION */}
       <fieldset>
         <legend> Personel Information</legend>
 
@@ -95,6 +101,7 @@ const LoginPage = () => {
         <br />
       </fieldset>
 
+      {/* FIELDSET - ADDRESS */}
       <fieldset>
         <legend> Address</legend>
 
@@ -160,6 +167,7 @@ const LoginPage = () => {
         <br />
       </fieldset>
 
+      {/* FIELDSET - PAYMENT DETAILS */}
       <fieldset>
         <legend>Payment Details</legend>
 
