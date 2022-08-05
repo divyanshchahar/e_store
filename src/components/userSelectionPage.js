@@ -18,7 +18,22 @@ function UserSelectionPage() {
       .then((response) => response.json)
       .then((data) => console.log(data))
       .catch((err) => console.log(err));
+
+    const { userCount } = appData;
+    const updatedData = { ...appData, userCount: userCount - 1 };
+
+    fetch("http://localhost:3001/appdata/appdataid", {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updatedData),
+    })
+      .then((response) => response.json())
+      .then((text) => console.log(text))
+      .catch((err) => console.log(err));
   }
+
   return (
     <>
       <h1>select User</h1>
