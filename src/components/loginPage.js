@@ -1,9 +1,9 @@
 // IMPORTING FUNCTIONALITY
-import { toBeRequired } from "@testing-library/jest-dom/dist/matchers";
 import { useReducer } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 const LoginPage = () => {
+  const url = "http://localhost:3001/users";
   // REDUCER
   function loginReducer(state, action) {
     switch (action.type) {
@@ -31,21 +31,28 @@ const LoginPage = () => {
       case "adduuid":
         return { ...state, id: uuidv4() };
 
-      case "submitform":
-        console.log(state);
-        return state;
-
       default:
         return state;
     }
   }
 
   // FUNCTION TO HANDLE SUBMISSIONS
-  const handleSubmit = (e) => {
+  function handleSubmit(e) {
     e.preventDefault();
+
     dispatch({ type: "adduuid" });
-    dispatch({ type: "submitform" });
-  };
+
+    fetch(url, {
+      method: "POST", // or 'PUT'
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(state),
+    })
+      .then((response) => response.json())
+      .then((text) => console.log(text))
+      .catch((err) => console.log(err));
+  }
 
   // VARIABLE TO INITALIZE REDUCER STATE
   const intialState = {
