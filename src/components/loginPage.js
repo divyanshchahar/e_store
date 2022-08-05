@@ -2,8 +2,13 @@
 import { useReducer } from "react";
 import { v4 as uuidv4 } from "uuid";
 
+import useAPIData from "./useAPIData";
+
 const LoginPage = () => {
   const url = "http://localhost:3001/users";
+
+  const [appData] = useAPIData("http://localhost:3001/appdata");
+
   // REDUCER
   function loginReducer(state, action) {
     switch (action.type) {
@@ -43,11 +48,25 @@ const LoginPage = () => {
     dispatch({ type: "adduuid" });
 
     fetch(url, {
-      method: "POST", // or 'PUT'
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(state),
+    })
+      .then((response) => response.json())
+      .then((text) => console.log(text))
+      .catch((err) => console.log(err));
+
+    const { userCount } = appData;
+    const updatedData = { userCount: userCount + 1 };
+
+    fetch("http://localhost:3001/appdata/appdataid", {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updatedData),
     })
       .then((response) => response.json())
       .then((text) => console.log(text))
