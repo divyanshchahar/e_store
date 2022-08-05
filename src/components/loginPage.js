@@ -59,7 +59,7 @@ const LoginPage = () => {
       .catch((err) => console.log(err));
 
     const { userCount } = appData;
-    const updatedData = { userCount: userCount + 1 };
+    const updatedData = { ...appData, userCount: userCount + 1 };
 
     fetch("http://localhost:3001/appdata/appdataid", {
       method: "PUT",
