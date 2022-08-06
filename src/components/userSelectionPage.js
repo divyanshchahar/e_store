@@ -53,7 +53,6 @@ function UserSelectionPage() {
   }
 
   function selectUser(id) {
-    // const { currentUser } = appData;
     const updatedData = { ...appData, currentUser: id };
 
     fetch("http://localhost:3001/appdata/appdataid", {
