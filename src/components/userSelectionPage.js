@@ -4,6 +4,7 @@ import useAPIData from "./useAPIData";
 function UserSelectionPage() {
   const users = useAPIData("http://localhost:3001/users");
   const [appData] = useAPIData("http://localhost:3001/appdata");
+  const { userCount, currentUser } = appData || {};
 
   function deleteUser(id) {
     const url = "http://localhost:3001/users/";
@@ -19,7 +20,7 @@ function UserSelectionPage() {
       .then((data) => console.log(data))
       .catch((err) => console.log(err));
 
-    const { userCount } = appData;
+    // const { userCount } = appData;
     const updatedData = { ...appData, userCount: userCount - 1 };
 
     fetch("http://localhost:3001/appdata/appdataid", {
@@ -35,7 +36,7 @@ function UserSelectionPage() {
   }
 
   function selectUser(id) {
-    const { currentUser } = appData;
+    // const { currentUser } = appData;
     const updatedData = { ...appData, currentUser: id };
 
     fetch("http://localhost:3001/appdata/appdataid", {
