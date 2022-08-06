@@ -20,19 +20,36 @@ function UserSelectionPage() {
       .then((data) => console.log(data))
       .catch((err) => console.log(err));
 
-    // const { userCount } = appData;
-    const updatedData = { ...appData, userCount: userCount - 1 };
+    if (currentUser === id) {
+      const updatedData = {
+        ...appData,
+        userCount: userCount - 1,
+        currentUser: null,
+      };
 
-    fetch("http://localhost:3001/appdata/appdataid", {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(updatedData),
-    })
-      .then((response) => response.json())
-      .then((text) => console.log(text))
-      .catch((err) => console.log(err));
+      fetch("http://localhost:3001/appdata/appdataid", {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(updatedData),
+      })
+        .then((response) => response.json())
+        .then((text) => console.log(text))
+        .catch((err) => console.log(err));
+    } else {
+      const updatedData = { ...appData, userCount: userCount - 1 };
+      fetch("http://localhost:3001/appdata/appdataid", {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(updatedData),
+      })
+        .then((response) => response.json())
+        .then((text) => console.log(text))
+        .catch((err) => console.log(err));
+    }
   }
 
   function selectUser(id) {
