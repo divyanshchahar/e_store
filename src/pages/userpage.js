@@ -1,7 +1,7 @@
 // IMPORTING COMPONENETS
-import useAPIData from "./useAPIData";
-import LoginPage from "./loginPage";
-import UserSelectionPage from "./userSelectionPage";
+import useAPIData from "../services/utils/useAPIData";
+import LoginPage from "../pages/loginPage";
+import UserSelectionPage from "../pages/userSelectionPage";
 // import UserEdit from "./userEdit";
 
 const UserPage = () => {
