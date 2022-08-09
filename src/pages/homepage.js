@@ -2,9 +2,13 @@
 import { useState } from "react";
 
 // IMPORTING COMPONENETS
-import TopNavBar from "./topnavbar.js";
-import ProductList from "./productlist.js";
-import Footer from "./footer.js";
+// import TopNavBar from "./topnavbar.js";
+// import ProductList from "./productlist.js";
+// import Footer from "./footer.js";
+
+import TopNavBar from "../layouts/topnavbar";
+import ProductList from "../layouts/productlist";
+import Footer from "../layouts/footer";
 
 const HomePage = () => {
   const [args, setArgs] = useState("http://localhost:3001/product_data");
