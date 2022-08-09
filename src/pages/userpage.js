@@ -4,7 +4,7 @@ import LoginPage from "./loginPage";
 import UserSelectionPage from "./userSelectionPage";
 // import UserEdit from "./userEdit";
 
-const UserHandler = () => {
+const UserPage = () => {
   const [appState] = useAPIData("http://localhost:3001/appdata");
   const { userCount, currentUSer } = appState || {};
   let toRender = "";
@@ -25,4 +25,4 @@ const UserHandler = () => {
   );
 };
 
-export default UserHandler;
+export default UserPage;
