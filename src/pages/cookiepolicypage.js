@@ -1,6 +1,6 @@
 // IMPORTING COMPONENETS
-import TopNavBar from "./topnavbar";
-import Footer from "./footer";
+import TopNavBar from "../layouts/topnavbar";
+import Footer from "../layouts/footer";
 
 // IMPORTING ASSETS
 import cookiePolicyIcon from "../assets/images/cookies.png";

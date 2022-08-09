@@ -1,5 +1,5 @@
 //IMPORTING ASSETS
-import image_index from "../assets/data/image_index.js";
+import image_index from "../../assets/data/image_index";
 
 const SingleImageLoader = (productId) => {
   const selectedItem = image_index.filter(

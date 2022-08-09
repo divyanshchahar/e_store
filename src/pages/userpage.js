@@ -1,10 +1,10 @@
 // IMPORTING COMPONENETS
-import useAPIData from "./useAPIData";
-import LoginPage from "./loginPage";
-import UserSelectionPage from "./userSelectionPage";
+import useAPIData from "../services/utils/useAPIData";
+import LoginPage from "../pages/loginPage";
+import UserSelectionPage from "../pages/userSelectionPage";
 // import UserEdit from "./userEdit";
 
-const UserHandler = () => {
+const UserPage = () => {
   const [appState] = useAPIData("http://localhost:3001/appdata");
   const { userCount, currentUSer } = appState || {};
   let toRender = "";
@@ -25,4 +25,4 @@ const UserHandler = () => {
   );
 };
 
-export default UserHandler;
+export default UserPage;

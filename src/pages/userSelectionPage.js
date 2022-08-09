@@ -1,5 +1,5 @@
 // IMPORTING COMPONENETS
-import useAPIData from "./useAPIData";
+import useAPIData from "../services/utils/useAPIData";
 
 function UserSelectionPage() {
   const users = useAPIData("http://localhost:3001/users");
