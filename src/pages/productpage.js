@@ -2,11 +2,11 @@
 import { useParams } from "react-router-dom";
 
 // IMPORTING COMPONENTS
-import useAPIData from "./useAPIData";
-import DetailLoader from "./detailloader";
-import MultiImageLoader from "./multiimageloader";
-import TopNavBar from "./topnavbar.js";
-import Footer from "./footer";
+import useAPIData from "../services/utils/useAPIData";
+import DetailLoader from "../services/utils/detailloader";
+import MultiImageLoader from "../services/utils/mutliimageloader";
+import TopNavBar from "../layouts/topnavbar";
+import Footer from "../layouts/footer";
 
 const ProductPage = () => {
   const { id } = useParams();
