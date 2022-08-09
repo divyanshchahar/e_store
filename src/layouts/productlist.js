@@ -2,8 +2,8 @@
 import { Link } from "react-router-dom";
 
 // IMPORTING COMPONENTS
-import useAPIData from "./useAPIData";
-import SingleImageLoader from "./singleimageloader";
+import useAPIData from "../services/utils/useAPIData";
+import SingleImageLoader from "../services/utils/singleimageloader";
 
 const ProductList = ({ url }) => {
   const products = useAPIData(url);
