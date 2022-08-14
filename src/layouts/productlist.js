@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 // IMPORTING COMPONENTS
 import useAPIData from "../services/utils/useAPIData";
 import SingleImageLoader from "../services/utils/singleimageloader";
+import addToCart from "../middleware/addtocart";
 
 const ProductList = ({ url }) => {
   const products = useAPIData(url);
+
   return (
     <>
       {products.map((product) => {
@@ -23,7 +25,7 @@ const ProductList = ({ url }) => {
                 <h1>{product.name}</h1>
               </Link>
               <p>{"$ ".concat(product.price)}</p>
-              <button>Add to Cart</button>
+              <button onClick={() => addToCart(product.id)}>Add to Cart</button>
               <button>Buy Now</button>
             </div>
           </div>
