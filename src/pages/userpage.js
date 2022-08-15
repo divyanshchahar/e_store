@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom";
 
 // IMPORTING COMPONENETS
 import useAPIData from "../services/utils/useAPIData";
-import LoginPage from "../pages/loginPage";
-import UserSelectionPage from "../pages/userSelectionPage";
 
 const UserPage = () => {
   const [appState] = useAPIData("http://localhost:3001/appdata");
