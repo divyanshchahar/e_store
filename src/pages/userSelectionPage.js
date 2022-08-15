@@ -1,10 +1,18 @@
+//IMPORTING FUNCTIONALITY
+import { useNavigate } from "react-router-dom";
+
 // IMPORTING COMPONENETS
 import useAPIData from "../services/utils/useAPIData";
 
 function UserSelectionPage() {
+  const navigate = useNavigate();
   const users = useAPIData("http://localhost:3001/users");
   const [appData] = useAPIData("http://localhost:3001/appdata");
   const { userCount, currentUser } = appData || {};
+
+  if (userCount === 0) {
+    navigate("/registeruser");
+  }
 
   function deleteUser(id) {
     const url = "http://localhost:3001/users/";
@@ -69,7 +77,7 @@ function UserSelectionPage() {
 
   return (
     <>
-      <h1>select User</h1>
+      <h1>Please select user</h1>
       {users.map((item) => {
         const {
           id,
