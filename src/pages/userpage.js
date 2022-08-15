@@ -13,11 +13,7 @@ const UserPage = () => {
   let toRender = "";
 
   if (typeof userCount === "undefined") {
-    return (
-      <h1>
-        <h1>Loading</h1>
-      </h1>
-    );
+    return <h1>Loading</h1>;
   }
   if (userCount === 0) {
     navigate("/registeruser");
