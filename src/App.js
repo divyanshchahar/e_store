@@ -22,7 +22,7 @@ function App() {
         <Route path="/cookiepolicy" element={<CookiePolicyPage />} />
         <Route path="/product/:id" element={<ProductPage />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/loginpage" element={<UserPage />} />
+        <Route path="/user" element={<UserPage />} />
         <Route path="/registeruser" element={<LoginPage />} />
         <Route path="/selectuser" element={<UserSelectionPage />} />
         <Route path="*" element={<ErrorPage />} />

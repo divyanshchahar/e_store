@@ -45,7 +45,7 @@ const TopNavBar = () => {
           <img src={carticon} alt="" />
         </Link>
 
-        <Link to="/loginpage">
+        <Link to="/user">
           <img src={usericon} alt="" />
         </Link>
       </div>
