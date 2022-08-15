@@ -92,6 +92,13 @@ function UserSelectionPage() {
           </div>
         );
       })}
+      <button
+        onClick={() => {
+          navigate("/registeruser");
+        }}
+      >
+        Add User
+      </button>
     </>
   );
 }
