@@ -1,6 +1,7 @@
 // IMPORTING FUNCTIONALITY
 import { useReducer } from "react";
 import { v4 as uuidv4 } from "uuid";
+import { useNavigate } from "react-router-dom";
 
 // IMPORTING COMPONENTS
 import useAPIData from "../services/utils/useAPIData";
@@ -9,6 +10,7 @@ const LoginPage = () => {
   const url = "http://localhost:3001/users";
 
   const [appData] = useAPIData("http://localhost:3001/appdata");
+  const navigate = useNavigate();
 
   // REDUCER
   function loginReducer(state, action) {
@@ -72,6 +74,8 @@ const LoginPage = () => {
       .then((response) => response.json())
       .then((text) => console.log(text))
       .catch((err) => console.log(err));
+
+    navigate("/selectuser");
   }
 
   // VARIABLE TO INITALIZE REDUCER STATE
