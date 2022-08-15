@@ -21,20 +21,6 @@ const UserPage = () => {
   if (userCount > 0) {
     navigate("/selectuser");
   }
-  // if (userCount === 0) {
-  //   toRender = "loginPage";
-  // } else {
-  //   toRender = "userSelection";
-  // }
-
-  // return (
-  //   <>
-  //     {typeof userCount === "undefined" && <h1>Loading...</h1>}
-  //     {/* {toRender === "editPage" && <UserEdit />}/ */}
-  //     {toRender === "loginPage" && <LoginPage />}
-  //     {toRender === "userSelection" && <UserSelectionPage />}
-  //   </>
-  // );
 };
 
 export default UserPage;
