@@ -73,6 +73,8 @@ function UserSelectionPage() {
       .then((response) => response.json())
       .then((text) => console.log(text))
       .catch((err) => console.log(err));
+
+    navigate("/userhistory");
   }
 
   return (
