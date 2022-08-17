@@ -11,6 +11,7 @@ import ErrorPage from "./pages/errorpage";
 import UserPage from "./pages/userpage";
 import LoginPage from "./pages/loginPage";
 import UserSelectionPage from "./pages/userSelectionPage";
+import UserHistoryPage from "./pages/userHistoryPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/user" element={<UserPage />} />
         <Route path="/registeruser" element={<LoginPage />} />
         <Route path="/selectuser" element={<UserSelectionPage />} />
+        <Route path="/userhistory" element={<UserHistoryPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
