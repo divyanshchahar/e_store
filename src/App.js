@@ -26,7 +26,7 @@ function App() {
         <Route path="/user" element={<UserPage />} />
         <Route path="/registeruser" element={<LoginPage />} />
         <Route path="/selectuser" element={<UserSelectionPage />} />
-        <Route path="/userhistory" element={<UserHistoryPage />} />
+        <Route path="/userhistory/:id" element={<UserHistoryPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
