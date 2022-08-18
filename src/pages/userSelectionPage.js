@@ -1,5 +1,5 @@
 //IMPORTING FUNCTIONALITY
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 // IMPORTING COMPONENETS
 import useAPIData from "../services/utils/useAPIData";
@@ -89,7 +89,7 @@ function UserSelectionPage() {
           <div key={id}>
             <p>{name}</p>
             <p>{email}</p>
-            <button onClick={() => selectUser(id)}>Select User</button>
+            <Link to={`/userhistory/${id}`}>Select User</Link>
             <button onClick={() => deleteUser(id)}>Delete User</button>
           </div>
         );
