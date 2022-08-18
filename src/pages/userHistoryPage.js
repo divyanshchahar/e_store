@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useParams } from "react-router";
 
 import useAPIData from "../services/utils/useAPIData";
+import UserDetails from "../layouts/userdetail";
 
 function UserHistoryPage() {
   const { id } = useParams();
@@ -11,7 +12,15 @@ function UserHistoryPage() {
   const completeURl = userUrl.concat(id);
   const userData = useAPIData(completeURl);
 
-  return <h1>This is user history page</h1>;
+  return (
+    <>
+      {userData.length === 0 ? (
+        <h1>Loading</h1>
+      ) : (
+        <UserDetails userData={userData} />
+      )}
+    </>
+  );
 }
 
 export default UserHistoryPage;
