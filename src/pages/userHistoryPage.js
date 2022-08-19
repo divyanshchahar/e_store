@@ -5,21 +5,33 @@ import { useParams } from "react-router";
 
 import useAPIData from "../services/utils/useAPIData";
 import UserDetails from "../layouts/userdetail";
+import CartItems from "../layouts/cartitems";
 
 function UserHistoryPage() {
   const { id } = useParams();
   const userUrl = "http://localhost:3001/users/";
   const userFinalUrl = userUrl.concat(id);
-  const userData = useAPIData(userFinalUrl);
 
+  const cartUrl = "http://localhost:3001/cart/";
+  const finalCartURl = cartUrl.concat(id);
+
+  const historyUrl = "http://localhost:3001/shoppingHistory";
+  const finalhistoryUrl = historyUrl.concat(id);
+
+  const userData = useAPIData(userFinalUrl);
+  const cartData = useAPIData(finalCartURl);
   return (
     <>
       {userData.length === 0 ? (
-        <h1>Loading</h1>
+        <h1>Fetching user details ...</h1>
       ) : (
         <UserDetails userData={userData} />
       )}
-      {}
+      {userData.length === 0 ? (
+        <h1>Fetching cart ...</h1>
+      ) : (
+        <CartItems cartData={cartData} />
+      )}
     </>
   );
 }
