@@ -9,14 +9,6 @@ import createCartData from "../services/utils/createCartData";
 function CartItems(cartData) {
   const products = useAPIData("http://localhost:3001/product_data");
 
-  // const cartPid = cartData.cartData.cartItems.map((item) => {
-  //   return item.pid;
-  // });
-
-  // const filtered = products.filter((item) => {
-  //   return cartPid.includes(item.id);
-  // });
-
   const cartDisplay = createCartData(cartData, products);
 
   return (
