@@ -9,8 +9,8 @@ import UserDetails from "../layouts/userdetail";
 function UserHistoryPage() {
   const { id } = useParams();
   const userUrl = "http://localhost:3001/users/";
-  const completeURl = userUrl.concat(id);
-  const userData = useAPIData(completeURl);
+  const userFinalUrl = userUrl.concat(id);
+  const userData = useAPIData(userFinalUrl);
 
   return (
     <>
@@ -19,6 +19,7 @@ function UserHistoryPage() {
       ) : (
         <UserDetails userData={userData} />
       )}
+      {}
     </>
   );
 }
