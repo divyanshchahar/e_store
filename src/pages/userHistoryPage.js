@@ -6,6 +6,7 @@ import { useParams } from "react-router";
 import useAPIData from "../services/utils/useAPIData";
 import UserDetails from "../layouts/userdetail";
 import CartItems from "../layouts/cartitems";
+import HistoryItems from "../layouts/historyItems";
 
 function UserHistoryPage() {
   const { id } = useParams();
@@ -15,11 +16,12 @@ function UserHistoryPage() {
   const cartUrl = "http://localhost:3001/cart/";
   const finalCartURl = cartUrl.concat(id);
 
-  const historyUrl = "http://localhost:3001/shoppingHistory";
+  const historyUrl = "http://localhost:3001/shoppingHistory/";
   const finalhistoryUrl = historyUrl.concat(id);
 
   const userData = useAPIData(userFinalUrl);
   const cartData = useAPIData(finalCartURl);
+
   return (
     <>
       {userData.length === 0 ? (
@@ -27,7 +29,7 @@ function UserHistoryPage() {
       ) : (
         <UserDetails userData={userData} />
       )}
-      {userData.length === 0 ? (
+      {cartData.length === 0 ? (
         <h1>Fetching cart ...</h1>
       ) : (
         <CartItems cartData={cartData} />
