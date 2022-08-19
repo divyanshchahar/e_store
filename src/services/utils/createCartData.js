@@ -9,7 +9,7 @@ function createCartData(cartData, products) {
     return temp1.includes(item.id);
   });
 
-  var cartDisplay = []; //
+  var cartDisplay = []; // array to hold final cart data
 
   temp2.map((itemA) => {
     cartData.cartData.cartItems.map((itemB) => {
