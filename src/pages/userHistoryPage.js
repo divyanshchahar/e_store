@@ -21,6 +21,7 @@ function UserHistoryPage() {
 
   const userData = useAPIData(userFinalUrl);
   const cartData = useAPIData(finalCartURl);
+  const historyData = useAPIData(finalhistoryUrl);
 
   return (
     <>
@@ -33,6 +34,11 @@ function UserHistoryPage() {
         <h1>Fetching cart ...</h1>
       ) : (
         <CartItems cartData={cartData} />
+      )}
+      {historyData.length === 0 ? (
+        <h1>Fetching shopping history ...</h1>
+      ) : (
+        <HistoryItems historyData={historyData} />
       )}
     </>
   );
