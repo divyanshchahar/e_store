@@ -8,7 +8,6 @@ import createCartData from "../services/utils/createCartData";
 
 function CartItems(cartData) {
   const products = useAPIData("http://localhost:3001/product_data");
-
   const cartDisplay = createCartData(cartData, products);
 
   return (
