@@ -1,10 +1,7 @@
-//IMPORTING FUNCTIONALITY
-import SingleImageLoader from "../services/utils/singleimageloader";
-import { Link } from "react-router-dom";
-
 // IMPORTING COMPONENETS
 import useAPIData from "../services/utils/useAPIData";
 import createCartData from "../services/utils/createCartData";
+import SingleImageLoader from "../services/utils/singleimageloader";
 
 function CartItems(cartData) {
   const products = useAPIData("http://localhost:3001/product_data");
