@@ -9,7 +9,7 @@ const Cart = () => {
   return (
     <>
       {cartData.length === 0 ? (
-        <h1>No items in Cart</h1>
+        <h1>This user has no itms in cart</h1>
       ) : (
         <CartItems cartData={cartData} />
       )}
