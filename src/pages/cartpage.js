@@ -8,7 +8,11 @@ const Cart = () => {
   const cartData = useAPIData(`http://localhost:3001/cart/${id}`);
   return (
     <>
-      {cartData.length === 0 ? <h1>A</h1> : <CartItems cartData={cartData} />}
+      {cartData.length === 0 ? (
+        <h1>No items in Cart</h1>
+      ) : (
+        <CartItems cartData={cartData} />
+      )}
     </>
   );
 };
