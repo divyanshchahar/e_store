@@ -8,6 +8,7 @@ function CartItems(cartData) {
   const products = useAPIData("http://localhost:3001/product_data");
   const cartDisplay = createCartData(cartData, products);
   const showCartData = cartData.length * cartDisplay.length;
+  var total = 0;
   return (
     <>
       {showCartData.length === 0 ? (
@@ -15,6 +16,7 @@ function CartItems(cartData) {
       ) : (
         <div>
           {cartDisplay.map((item) => {
+            total = total + item.price * item.qty;
             return (
               <div key={item.id}>
                 <SingleImageLoader productId={item.id} />
@@ -26,6 +28,7 @@ function CartItems(cartData) {
               </div>
             );
           })}
+          <p>Total: {total}</p>
         </div>
       )}
     </>
