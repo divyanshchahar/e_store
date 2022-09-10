@@ -7,10 +7,10 @@ import addToCart from "../middleware/addtocart";
 function CartItems(cartData) {
   const products = useAPIData("http://localhost:3001/product_data");
   const cartDisplay = createCartData(cartData, products);
-
+  const showCartData = cartData.length * cartDisplay.length;
   return (
     <>
-      {cartDisplay.length === 0 ? (
+      {showCartData.length === 0 ? (
         <h1>Loading cart items</h1>
       ) : (
         <div>
