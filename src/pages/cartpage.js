@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 // IMPORTING COMPONENTS
-// import useAPIData from "../services/utils/useAPIData";
 import CartItems from "../layouts/cartitems";
 
 const Cart = () => {
