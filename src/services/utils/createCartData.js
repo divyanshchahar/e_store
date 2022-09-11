@@ -1,6 +1,6 @@
 function createCartData(cartData, products) {
   // array of product ids in cart
-  const temp1 = cartData.cartData.cartItems.map((item) => {
+  const temp1 = cartData.cartData.map((item) => {
     return item.pid;
   });
 
@@ -12,7 +12,7 @@ function createCartData(cartData, products) {
   var cartDisplay = []; // array to hold final cart data
 
   temp2.map((itemA) => {
-    cartData.cartData.cartItems.map((itemB) => {
+    cartData.cartData.map((itemB) => {
       if (itemA.id === itemB.pid) {
         cartDisplay.push({ ...itemA, qty: itemB.qty });
       }
