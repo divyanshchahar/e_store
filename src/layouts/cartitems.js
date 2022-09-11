@@ -3,6 +3,7 @@ import useAPIData from "../services/utils/useAPIData";
 import createCartData from "../services/utils/createCartData";
 import SingleImageLoader from "../services/utils/singleimageloader";
 import addToCart from "../middleware/addtocart";
+import removeFromCart from "../middleware/removeFromCart";
 
 function CartItems(cartData) {
   const products = useAPIData("http://localhost:3001/product_data");
@@ -24,7 +25,7 @@ function CartItems(cartData) {
                 <p>{`$ ${item.price}`}</p>
                 <button onClick={() => addToCart(item.id)}>+</button>
                 <p>{item.qty}</p>
-                <button>-</button>
+                <button onClick={() => removeFromCart(item.id)}>-</button>
               </div>
             );
           })}
