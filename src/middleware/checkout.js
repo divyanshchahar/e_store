@@ -50,9 +50,8 @@ export default function checkout() {
   // function to add orders
   async function addOrder(userId, historyData, cartData) {
     const dateValue = new Date();
-    const previousOrders = historyData.itemsBought;
-    const newOrder = previousOrders.push({
-      date: dateValue,
+    historyData.orders.push({
+      date: dateValue.toString(),
       itemsBought: cartData.cartItems,
     });
   }
