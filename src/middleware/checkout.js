@@ -81,8 +81,7 @@ export default function checkout() {
       orders: [{ date: dateValue.toString(), itemsBought: cartData.cartItems }],
     };
 
-    const updateUrl = "http://localhost:3001/shoppingHistory/";
-    const url = updateUrl.concat(userId);
+    const url = "http://localhost:3001/shoppingHistory";
     const args = {
       method: "PUT",
       headers: {
