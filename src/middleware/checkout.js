@@ -68,6 +68,18 @@ export default function checkout() {
       id: userId,
       orders: [{ date: dateValue.toString(), itemsBought: cartData.cartItems }],
     };
+
+    const updateUrl = "http://localhost:3001/shoppingHistory/";
+    const url = updateUrl.concat(userId);
+    const args = {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(historyData),
+    };
+
+    putData(url, args);
   }
 
   //function to extract shopping history of a user
