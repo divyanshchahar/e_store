@@ -4,6 +4,7 @@ import createCartData from "../services/utils/createCartData";
 import SingleImageLoader from "../services/utils/singleimageloader";
 import addToCart from "../middleware/addtocart";
 import removeFromCart from "../middleware/removeFromCart";
+import checkout from "../middleware/checkout";
 
 function CartItems(cartData) {
   const products = useAPIData("http://localhost:3001/product_data");
@@ -30,6 +31,7 @@ function CartItems(cartData) {
             );
           })}
           <p>Total: {total}</p>
+          <button onClick={() => checkout()}>Buy Items</button>
         </div>
       )}
     </>
