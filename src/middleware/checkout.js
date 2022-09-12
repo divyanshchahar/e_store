@@ -31,8 +31,30 @@ export default function checkout() {
     }
   }
 
+  //function to extract cart of a user
+  async function getCart(isLoggedIn) {
+    const requestUrl = "http://localhost:3001/cart/";
+    const completeUrl = requestUrl.concat(isLoggedIn);
+    const [cartData, statusCode] = await getData(completeUrl);
+    if (statusCode === "ok") {
+      if (cartData) {
+        return cartData;
+      } else {
+        return null;
+      }
+    } else {
+      // unable to get api response
+    }
+  }
+
   //driver function
   async function executeOperation() {
     const userId = await checkUser();
+
+    if (userId) {
+      const cartData = getCart(userId);
+    } else {
+      // throw error user not logged in
+    }
   }
 }
