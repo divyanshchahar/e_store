@@ -78,8 +78,8 @@ export default function checkout() {
     const userId = await checkUser();
 
     if (userId) {
-      const cartData = getCart(userId);
-      const historyData = getShoppingHistory(userId);
+      const cartData = await getCart(userId);
+      const historyData = await getShoppingHistory(userId);
 
       if (historyData) {
         addOrder(userId, historyData, cartData);
