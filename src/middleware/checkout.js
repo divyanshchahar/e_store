@@ -47,12 +47,30 @@ export default function checkout() {
     }
   }
 
+  //function to extract shopping history of a user
+  async function getShoppingHistory(userId) {
+    const requestUrl = "http://localhost:3001/shoppingHistory/";
+    const completeUrl = requestUrl.concat(userId);
+    const [historyData, statusCode] = await getData(completeUrl);
+    if (statusCode === "ok") {
+      if (historyData) {
+        return historyData;
+      } else {
+        return null;
+      }
+    } else {
+      // unable to get api response
+    }
+  }
+
   //driver function
   async function executeOperation() {
     const userId = await checkUser();
 
     if (userId) {
       const cartData = getCart(userId);
+      const historyData = getShoppingHistory(userId);
+
       if (cartData) {
         // add new order
       } else {
