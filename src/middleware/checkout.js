@@ -71,7 +71,7 @@ export default function checkout() {
       const cartData = getCart(userId);
       const historyData = getShoppingHistory(userId);
 
-      if (cartData) {
+      if (historyData) {
         // add new order
       } else {
         // add cart
