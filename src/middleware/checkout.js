@@ -13,4 +13,9 @@ export default function checkout() {
       return ["", "network error"];
     }
   }
+
+  //driver function
+  async function executeOperation() {
+    const userId = await checkUser();
+  }
 }
