@@ -53,6 +53,11 @@ export default function checkout() {
 
     if (userId) {
       const cartData = getCart(userId);
+      if (cartData) {
+        // add new order
+      } else {
+        // add cart
+      }
     } else {
       // throw error user not logged in
     }
