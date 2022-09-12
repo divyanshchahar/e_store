@@ -14,6 +14,23 @@ export default function checkout() {
     }
   }
 
+  // function to ckeck if user has loggeded in
+  async function checkUser() {
+    const [[appData], statusCode] = await getData(
+      "http://localhost:3001/appdata"
+    );
+    if (statusCode === "ok") {
+      const { currentUser } = appData;
+      if (currentUser) {
+        return currentUser;
+      } else {
+        return false;
+      }
+    } else {
+      // unable to get api response
+    }
+  }
+
   //driver function
   async function executeOperation() {
     const userId = await checkUser();
