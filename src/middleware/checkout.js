@@ -56,6 +56,15 @@ export default function checkout() {
     });
   }
 
+  // function to add shoppingHistory
+  async function addShoppingHistory(userId, cartData) {
+    const dateValue = new Date();
+    const historyData = {
+      id: userId,
+      orders: [{ date: dateValue.toString(), itemsBought: cartData.cartItems }],
+    };
+  }
+
   //function to extract shopping history of a user
   async function getShoppingHistory(userId) {
     const requestUrl = "http://localhost:3001/shoppingHistory/";
@@ -83,7 +92,7 @@ export default function checkout() {
       if (historyData) {
         addOrder(userId, historyData, cartData);
       } else {
-        // add cart
+        addShoppingHistory(userId, cartData);
       }
     } else {
       // throw error user not logged in
