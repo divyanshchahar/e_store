@@ -14,6 +14,11 @@ export default function checkout() {
     }
   }
 
+  //function to update JSON
+  function putData(url, args) {
+    fetch(url, args);
+  }
+
   // function to ckeck if user has loggeded in
   async function checkUser() {
     const [[appData], statusCode] = await getData(
