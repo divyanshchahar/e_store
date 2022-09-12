@@ -90,4 +90,6 @@ export default function checkout() {
       // throw error user not logged in
     }
   }
+
+  executeOperation();
 }
