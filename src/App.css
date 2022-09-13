@@ -205,6 +205,7 @@
   font-size: var(--fs2-normalemphasized);
   font-weight: var(--fw2-normalemphasized);
   padding: var(--p2-fullscreen);
+  text-align: center;
 }
 
 .secondrypage img {
