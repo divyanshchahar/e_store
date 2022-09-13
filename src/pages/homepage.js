@@ -11,48 +11,42 @@ const HomePage = () => {
   return (
     <>
       <TopNavBar />
+      <div className="sortingrow">
+        <button
+          onClick={() =>
+            setArgs("http://localhost:3001/product_data?_sort=name&_order=asc")
+          }
+        >
+          Sort: Name (A to Z)
+        </button>
+
+        <button
+          onClick={() =>
+            setArgs("http://localhost:3001/product_data?_sort=name&_order=desc")
+          }
+        >
+          Sort: Name (Z to A)
+        </button>
+
+        <button
+          onClick={() =>
+            setArgs("http://localhost:3001/product_data?_sort=price&_order=asc")
+          }
+        >
+          Sort: Price (Ascending)
+        </button>
+
+        <button
+          onClick={() =>
+            setArgs(
+              "http://localhost:3001/product_data?_sort=price&_order=desc"
+            )
+          }
+        >
+          Sort: Price (Descending)
+        </button>
+      </div>
       <div className="listofproducts">
-        <div className="sortingrow">
-          <button
-            onClick={() =>
-              setArgs(
-                "http://localhost:3001/product_data?_sort=name&_order=asc"
-              )
-            }
-          >
-            Sort: Name (A to Z)
-          </button>
-
-          <button
-            onClick={() =>
-              setArgs(
-                "http://localhost:3001/product_data?_sort=name&_order=desc"
-              )
-            }
-          >
-            Sort: Name (Z to A)
-          </button>
-
-          <button
-            onClick={() =>
-              setArgs(
-                "http://localhost:3001/product_data?_sort=price&_order=asc"
-              )
-            }
-          >
-            Sort: Price (Ascending)
-          </button>
-
-          <button
-            onClick={() =>
-              setArgs(
-                "http://localhost:3001/product_data?_sort=price&_order=desc"
-              )
-            }
-          >
-            Sort: Price (Descending)
-          </button>
-        </div>
         <ProductList url={args} />
       </div>
       <Footer />

@@ -114,6 +114,17 @@
   padding: var(--p1-textcontainer);
 }
 
+/* SORTING ROW */
+.sortingrow {
+  background-color: var(--clr-background1);
+  padding: var(--p1-fullscreen2);
+}
+
+.sortingrow button {
+  padding: var(--p1-textcontainer);
+  margin: var(--p1-fullscreen2);
+}
+
 /* PRODUCT LIST  */
 .listofproducts {
   margin-top: calc(3 * var(--h1-icon));
