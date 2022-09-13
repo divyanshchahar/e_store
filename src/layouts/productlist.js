@@ -14,11 +14,9 @@ const ProductList = ({ url }) => {
       {products.map((product) => {
         return (
           <div key={product.id} className="product">
-            <div className="productimg">
-              <Link to={`/product/${product.id}`}>
-                <SingleImageLoader productId={product.id} />
-              </Link>
-            </div>
+            <Link className="productimg" to={`/product/${product.id}`}>
+              <SingleImageLoader productId={product.id} />
+            </Link>
 
             <div className="productdetail">
               <Link to={`/product/${product.id}`}>
