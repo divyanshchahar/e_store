@@ -40,7 +40,7 @@ const TopNavBar = () => {
         })}
       </div>
 
-      <div>
+      <div className="topnavbarbuttons">
         <Link to="/cart">
           <img src={carticon} alt="" />
         </Link>

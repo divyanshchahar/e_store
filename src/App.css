@@ -79,8 +79,8 @@
 /* TOPNAVBAR */
 .topnavbar {
   display: flex;
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0; */
   width: var(--w1-fullscreen);
   justify-content: space-between;
   align-items: center;
@@ -92,6 +92,10 @@
 
 .topnavbar img {
   height: var(--h1-icon);
+}
+
+.topnavbarbuttons img {
+  margin: 5px;
 }
 
 .searchbar {
