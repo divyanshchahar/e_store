@@ -79,8 +79,6 @@
 /* TOPNAVBAR */
 .topnavbar {
   display: flex;
-  /* position: fixed; */
-  /* top: 0; */
   width: var(--w1-fullscreen);
   justify-content: space-between;
   align-items: center;
