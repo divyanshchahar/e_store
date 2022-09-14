@@ -78,8 +78,8 @@ function UserSelectionPage() {
   }
 
   return (
-    <>
-      <h1>Please select user</h1>
+    <div className="textcontainer">
+      <h1 className="mainpageheading">Please select user</h1>
       {users.map((item) => {
         const {
           id,
@@ -89,19 +89,22 @@ function UserSelectionPage() {
           <div key={id}>
             <p>{name}</p>
             <p>{email}</p>
-            <Link to={`/userhistory/${id}`}>Select User</Link>
+            <button onClick={() => navigate(`/userhistory/${id}`)}>
+              Select User
+            </button>
             <button onClick={() => deleteUser(id)}>Delete User</button>
           </div>
         );
       })}
       <button
+        className="fullwidthtextbutton"
         onClick={() => {
           navigate("/registeruser");
         }}
       >
         Add User
       </button>
-    </>
+    </div>
   );
 }
 

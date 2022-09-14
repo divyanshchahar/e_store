@@ -179,7 +179,6 @@
 }
 
 /* FOOTER */
-
 .footer {
   display: flex;
   position: fixed;
@@ -196,7 +195,6 @@
 }
 
 /* SECONDRY PAGES */
-
 .secondrypage {
   margin-top: calc(3 * var(--h1-icon));
 }
@@ -220,7 +218,6 @@
 }
 
 /* PRODUCT PAGE */
-
 .productpage {
   margin-top: calc(3 * var(--h1-icon));
   padding: var(--p1-fullscreen1);
@@ -262,7 +259,6 @@
 }
 
 /* INPUT FORM */
-
 .inputform {
   padding: var(--p4);
 }
@@ -279,7 +275,6 @@
 }
 
 /* CART PAGE */
-
 .cartpage {
   margin-top: var(--m5-top);
   padding: calc(2 * var(--p1-fullscreen1));
@@ -330,6 +325,35 @@
 .buynowbutton {
   padding: var(--p1-textcontainer);
   margin-top: var(--p1-textcontainer);
+  width: 100%;
+}
+
+/*6*/
+
+.mainpageheading {
+  font-size: calc(2 * var(--fs1-headings));
+  text-align: center;
+  margin-top: calc(2 * var(--fs1-headings));
+  margin-bottom: calc(2 * var(--fs1-headings));
+}
+
+.textcontainer {
+  padding: calc(2 * var(--p1-textcontainer));
+}
+
+.textcontainer p {
+  padding-top: var(--p1-textcontainer);
+  padding-bottom: var(--p1-textcontainer);
+}
+
+.textcontainer button {
+  margin-right: var(--p1-textcontainer);
+  padding: var(--p1-textcontainer);
+}
+
+.fullwidthtextbutton {
+  display: block;
+  margin-top: calc(2 * var(--p1-textcontainer));
   width: 100%;
 }
 
