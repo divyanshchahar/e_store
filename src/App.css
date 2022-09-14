@@ -97,16 +97,24 @@
 
 .topnavbar img {
   height: var(--h1-icon);
-}
-
-.topnavbarbuttons img {
-  margin: 5px;
+  margin: calc(0.1 * var(--h1-icon));
 }
 
 .searchbar {
   display: flex;
   width: var(--w1-fullscreen);
   order: 1;
+  position: relative;
+}
+
+.searchresults {
+  position: absolute;
+  top: calc(
+    calc(6 * var(--p1-fullscreen1)) + var(--h1-icon) + var(--p1-textcontainer)
+  );
+  background-color: white;
+  padding: calc(2 * var(--p1-textcontainer));
+  z-index: 10;
 }
 
 .searchbar input {
