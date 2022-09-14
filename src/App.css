@@ -508,23 +508,6 @@
     color: inherit;
   }
 
-  /* FOOTER */
-
-  .footer {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    width: var(--w1-fullscreen);
-    background-color: var(--clr-background3);
-    padding: var(--p1-fullscreen1);
-    justify-content: space-evenly;
-  }
-
-  .footer a {
-    text-decoration: none;
-    color: var(--clr-background2);
-  }
-
   /*SECONDRY PAGE*/
 
   .secondrypage {
