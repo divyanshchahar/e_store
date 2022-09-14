@@ -16,22 +16,29 @@ function CartItems(cartData) {
       {showCartData.length === 0 ? (
         <h1>Loading cart items</h1>
       ) : (
-        <div>
+        <div className="cartpage">
+          <h1>Cart</h1>
           {cartDisplay.map((item) => {
             total = total + item.price * item.qty;
             return (
-              <div key={item.id}>
+              <div key={item.id} className="cartitem">
                 <SingleImageLoader productId={item.id} />
-                <p>{item.name}</p>
-                <p>{`$ ${item.price}`}</p>
-                <button onClick={() => addToCart(item.id)}>+</button>
-                <p>{item.qty}</p>
-                <button onClick={() => removeFromCart(item.id)}>-</button>
+                <div className="detailcontainer">
+                  <h1>{item.name}</h1>
+                  <p>{`$ ${item.price}`}</p>
+                  <div className="qty">
+                    <button onClick={() => addToCart(item.id)}>+</button>
+                    <p>{item.qty}</p>
+                    <button onClick={() => removeFromCart(item.id)}>-</button>
+                  </div>
+                </div>
               </div>
             );
           })}
-          <p>Total: {total}</p>
-          <button onClick={() => checkout()}>Buy Items</button>
+          <p className="total">Total: {total}</p>
+          <button className="buynowbutton" onClick={() => checkout()}>
+            Buy Items
+          </button>
         </div>
       )}
     </>
