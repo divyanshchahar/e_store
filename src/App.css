@@ -437,12 +437,6 @@
     --w4-input: 100%; /* here */
 
     --m4-input: 0.5rem;
-
-    /* COLORS */
-    --clr-theme1: rgb(0, 0, 35);
-    --clr-background1: rgb(245, 245, 255);
-    --clr-background2: rgb(255, 255, 255);
-    --clr-background3: rgb(0, 0, 0);
   }
 
   /* TOPNAVBAR */
