@@ -400,18 +400,14 @@
     --br1-fullscreen: calc(0.01 * var(--w1-fullscreen));
 
     /*2*/
+
     --fs2-heading: 3rem;
     --fs2-normalemphasized: 1.25rem;
 
-    /* --fw2-normalemphasized: 600; */
-
-    /* --p2-fullscreen: 5vw; */
-
     --w2-img: 60vw;
 
-    /* --m2-product: 5vw; here */
-
     /*3*/
+
     --fs3-productpage: 3rem;
     --fs3-details: 1.5rem;
 
@@ -426,11 +422,8 @@
 
     --w4-form: 45vw;
 
-    /* --p4: 10vw; */
     --p4-fieldset: 1rem;
     --p4-input: 0.25rem;
-
-    /* --fs4-fieldset: 1rem; */
 
     --m4-fieldset: 1rem;
 
