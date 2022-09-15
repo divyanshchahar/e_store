@@ -403,13 +403,13 @@
     --fs2-heading: 3rem;
     --fs2-normalemphasized: 1.25rem;
 
-    --fw2-normalemphasized: 600;
+    /* --fw2-normalemphasized: 600; */
 
-    --p2-fullscreen: 5vw;
+    /* --p2-fullscreen: 5vw; */
 
     --w2-img: 60vw;
 
-    --m2-product: 5vw; /* here */
+    /* --m2-product: 5vw; here */
 
     /*3*/
     --fs3-productpage: 3rem;
@@ -506,29 +506,6 @@
   .productdetail a {
     text-decoration: none;
     color: inherit;
-  }
-
-  /*SECONDRY PAGE*/
-
-  .secondrypage {
-    margin-top: calc(2 * var(--h1-icon));
-  }
-
-  .secondrypage h1 {
-    font-size: var(--fs2-heading);
-    text-align: center;
-  }
-
-  .secondrypage p {
-    font-size: var(--fs2-normalemphasized);
-    font-weight: var(--fw2-normalemphasized);
-    padding: var(--p2-fullscreen);
-  }
-
-  .secondrypage img {
-    width: var(--w2-img);
-    display: block;
-    margin: auto;
   }
 
   /* PRODUCT PAGE */
