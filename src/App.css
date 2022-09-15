@@ -568,6 +568,12 @@
   }
 }
 
+/* 
+##################
+# TABLET DEVICES #
+################## 
+*/
+
 @media screen and (min-width: 1025px) {
   :root {
     /* DIMENSIONS */
