@@ -426,11 +426,11 @@
 
     --w4-form: 45vw;
 
-    --p4: 10vw;
+    /* --p4: 10vw; */
     --p4-fieldset: 1rem;
     --p4-input: 0.25rem;
 
-    --fs4-fieldset: 1rem;
+    /* --fs4-fieldset: 1rem; */
 
     --m4-fieldset: 1rem;
 
@@ -562,6 +562,10 @@
     font-size: 1rem;
     margin-bottom: var(--m4-fieldset);
     padding: var(--p4-fieldset);
+  }
+
+  .inputform fieldset:first-child {
+    margin-top: calc(2 * var(--m4-fieldset));
   }
 
   .inputform input {
@@ -831,6 +835,7 @@
   .inputform fieldset {
     font-size: 1rem;
     margin-bottom: var(--m4-fieldset);
+    margin-top: var(--m4-fieldset);
     padding: var(--p4-fieldset);
   }
 
