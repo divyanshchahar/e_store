@@ -34,13 +34,15 @@ const TopNavBar = () => {
         <button>Search</button>
       </div>
 
-      <div className="searchresults">
-        {searched.map((item) => {
-          return <p>{item.name}</p>;
-        })}
-      </div>
+      {searched.length > 0 && (
+        <div className="searchresults">
+          {searched.map((item) => {
+            return <p>{item.name}</p>;
+          })}
+        </div>
+      )}
 
-      <div>
+      <div className="topnavbarbuttons">
         <Link to="/cart">
           <img src={carticon} alt="" />
         </Link>
