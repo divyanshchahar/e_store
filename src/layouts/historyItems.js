@@ -1,10 +1,10 @@
 //IMPORTING FUNCTIONALITY
-import SingleImageLoader from "../services/utils/singleimageloader";
+import SingleImageLoader from "../utils/singleimageloader";
 import { Link } from "react-router-dom";
 
 // IMPORTING COMPONENETS
-import useAPIData from "../services/utils/useAPIData";
-import CreateHistoryData from "../services/utils/createHistoryData";
+import useAPIData from "../utils/useAPIData";
+import CreateHistoryData from "../utils/createHistoryData";
 
 function HistoryItems(historyData) {
   const products = useAPIData("http://localhost:3001/product_data");
