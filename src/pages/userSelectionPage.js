@@ -2,7 +2,7 @@
 import { useNavigate, Link } from "react-router-dom";
 
 // IMPORTING COMPONENETS
-import useAPIData from "../services/utils/useAPIData";
+import useAPIData from "../utils/useAPIData";
 
 function UserSelectionPage() {
   const navigate = useNavigate();
