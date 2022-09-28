@@ -10,14 +10,12 @@ import HistoryItems from "../layouts/historyItems";
 
 function UserHistoryPage() {
   const { id } = useParams();
-  const userUrl = "http://localhost:3001/users/";
-  const userFinalUrl = userUrl.concat(id);
 
-  const cartUrl = "http://localhost:3001/cart/";
-  const finalCartURl = cartUrl.concat(id);
+  const userFinalUrl = `http://localhost:3001/users/${id}`;
 
-  const historyUrl = "http://localhost:3001/shoppingHistory/";
-  const finalhistoryUrl = historyUrl.concat(id);
+  const finalCartURl = `http://localhost:3001/cart/${id}`;
+
+  const finalhistoryUrl = `http://localhost:3001/shoppingHistory/${id}`;
 
   const userData = useAPIData(userFinalUrl);
   const cartData = useAPIData(finalCartURl);
