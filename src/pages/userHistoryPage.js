@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router";
 
-import useAPIData from "../services/utils/useAPIData";
+import useAPIData from "../utils/useAPIData";
 import UserDetails from "../layouts/userdetail";
 import CartItems from "../layouts/cartitems";
 import HistoryItems from "../layouts/historyItems";
