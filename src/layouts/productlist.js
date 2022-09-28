@@ -2,8 +2,8 @@
 import { Link } from "react-router-dom";
 
 // IMPORTING COMPONENTS
-import useAPIData from "../services/utils/useAPIData";
-import SingleImageLoader from "../services/utils/singleimageloader";
+import useAPIData from "../utils/useAPIData";
+import SingleImageLoader from "../utils/singleimageloader";
 import addToCart from "../middleware/addtocart";
 
 const ProductList = ({ url }) => {
