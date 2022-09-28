@@ -2,9 +2,9 @@
 import { useParams } from "react-router-dom";
 
 // IMPORTING COMPONENTS
-import useAPIData from "../services/utils/useAPIData";
-import DetailLoader from "../services/utils/detailloader";
-import MultiImageLoader from "../services/utils/mutliimageloader";
+import useAPIData from "../utils/useAPIData";
+import DetailLoader from "../utils/detailloader";
+import MultiImageLoader from "../utils/mutliimageloader";
 import TopNavBar from "../layouts/topnavbar";
 import Footer from "../layouts/footer";
 
