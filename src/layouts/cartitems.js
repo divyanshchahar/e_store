@@ -1,7 +1,7 @@
 // IMPORTING COMPONENETS
-import useAPIData from "../services/utils/useAPIData";
-import createCartData from "../services/utils/createCartData";
-import SingleImageLoader from "../services/utils/singleimageloader";
+import useAPIData from "../utils/useAPIData";
+import createCartData from "../utils/createCartData";
+import SingleImageLoader from "../utils/singleimageloader";
 import addToCart from "../middleware/addtocart";
 import removeFromCart from "../middleware/removeFromCart";
 import checkout from "../middleware/checkout";

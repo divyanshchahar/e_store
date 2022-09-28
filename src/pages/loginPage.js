@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import { useNavigate } from "react-router-dom";
 
 // IMPORTING COMPONENTS
-import useAPIData from "../services/utils/useAPIData";
+import useAPIData from "../utils/useAPIData";
 
 const LoginPage = () => {
   const url = "http://localhost:3001/users";

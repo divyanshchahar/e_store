@@ -8,7 +8,7 @@ import logoicon from "../assets/images/store-solid.svg";
 import carticon from "../assets/images/cart-shopping-solid.svg";
 
 //IMPORTING COMPONENTS
-import useAPIData from "../services/utils/useAPIData";
+import useAPIData from "../utils/useAPIData";
 
 const TopNavBar = () => {
   const url = "http://localhost:3001/product_data?_sort=name&_order=asc";
