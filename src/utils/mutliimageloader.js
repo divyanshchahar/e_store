@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 // IMPORTING ASSETS
-import image_index from "../../assets/data/image_index";
+import image_index from "../assets/data/image_index";
 
 const MultiImageLoader = ({ productId }) => {
   const selectedItem = image_index.filter((item) => item.id === productId);
